@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E1A4C4E1CC2A7DD00D3E550 /* TakeDrugVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A4C4D1CC2A7DD00D3E550 /* TakeDrugVC.m */; };
+		4E1A4C511CC4C89700D3E550 /* DrugLeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A4C501CC4C89700D3E550 /* DrugLeftVC.m */; };
+		4E1A4C541CC584B300D3E550 /* WhatFeelingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A4C531CC584B300D3E550 /* WhatFeelingVC.m */; };
+		4EC1E40A1CC79681004586B0 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4091CC79681004586B0 /* HistoryVC.m */; };
+		4EC1E40E1CC93388004586B0 /* CareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E40D1CC93388004586B0 /* CareModel.swift */; };
+		4EC1E40F1CC93388004586B0 /* CareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E40D1CC93388004586B0 /* CareModel.swift */; };
+		4EC1E4111CC9350C004586B0 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4101CC9350C004586B0 /* ModelTests.swift */; };
+		4EC1E4141CCE0548004586B0 /* HistoryVC_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4131CCE0548004586B0 /* HistoryVC_Swift.swift */; };
+		4EC1E4151CCE0548004586B0 /* HistoryVC_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4131CCE0548004586B0 /* HistoryVC_Swift.swift */; };
+		4EC1E43B1CD01BB7004586B0 /* ProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E43A1CD01BB7004586B0 /* ProfilVC.swift */; };
+		4EC6907B1CBC35F20031C764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6907A1CBC35F20031C764 /* main.m */; };
+		4EC6907E1CBC35F20031C764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6907D1CBC35F20031C764 /* AppDelegate.m */; };
+		4EC690811CBC35F20031C764 /* TodayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC690801CBC35F20031C764 /* TodayVC.m */; };
+		4EC690841CBC35F20031C764 /* SymptomsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC690831CBC35F20031C764 /* SymptomsVC.m */; };
+		4EC690871CBC35F20031C764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC690851CBC35F20031C764 /* Main.storyboard */; };
+		4EC690891CBC35F20031C764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC690881CBC35F20031C764 /* Assets.xcassets */; };
+		4EC6908C1CBC35F20031C764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC6908A1CBC35F20031C764 /* LaunchScreen.storyboard */; };
+		4EC690A21CBC35F20031C764 /* ObservamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC690A11CBC35F20031C764 /* ObservamUITests.m */; };
+		84D910DC011DD31E312A3F92 /* Pods_Observam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA8933D5F8A0E8D3B05780A /* Pods_Observam.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EC690931CBC35F20031C764 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC6906E1CBC35F10031C764 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC690751CBC35F10031C764;
+			remoteInfo = "Observ'am";
+		};
+		4EC6909E1CBC35F20031C764 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC6906E1CBC35F10031C764 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC690751CBC35F10031C764;
+			remoteInfo = "Observ'am";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4EC1E4351CCEE3A6004586B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4E1A4C4C1CC2A7DD00D3E550 /* TakeDrugVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeDrugVC.h; sourceTree = "<group>"; };
+		4E1A4C4D1CC2A7DD00D3E550 /* TakeDrugVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeDrugVC.m; sourceTree = "<group>"; };
+		4E1A4C4F1CC4C89700D3E550 /* DrugLeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugLeftVC.h; sourceTree = "<group>"; };
+		4E1A4C501CC4C89700D3E550 /* DrugLeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugLeftVC.m; sourceTree = "<group>"; };
+		4E1A4C521CC584B300D3E550 /* WhatFeelingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatFeelingVC.h; sourceTree = "<group>"; };
+		4E1A4C531CC584B300D3E550 /* WhatFeelingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatFeelingVC.m; sourceTree = "<group>"; };
+		4EC1E4081CC79681004586B0 /* HistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryVC.h; sourceTree = "<group>"; };
+		4EC1E4091CC79681004586B0 /* HistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryVC.m; sourceTree = "<group>"; };
+		4EC1E40D1CC93388004586B0 /* CareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareModel.swift; sourceTree = "<group>"; };
+		4EC1E4101CC9350C004586B0 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		4EC1E4121CC936FD004586B0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		4EC1E4131CCE0548004586B0 /* HistoryVC_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC_Swift.swift; sourceTree = "<group>"; };
+		4EC1E43A1CD01BB7004586B0 /* ProfilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilVC.swift; sourceTree = "<group>"; };
+		4EC690761CBC35F10031C764 /* Observam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Observam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC6907A1CBC35F20031C764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4EC6907C1CBC35F20031C764 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4EC6907D1CBC35F20031C764 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4EC6907F1CBC35F20031C764 /* TodayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayVC.h; sourceTree = "<group>"; };
+		4EC690801CBC35F20031C764 /* TodayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayVC.m; sourceTree = "<group>"; };
+		4EC690821CBC35F20031C764 /* SymptomsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymptomsVC.h; sourceTree = "<group>"; };
+		4EC690831CBC35F20031C764 /* SymptomsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymptomsVC.m; sourceTree = "<group>"; };
+		4EC690861CBC35F20031C764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EC690881CBC35F20031C764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EC6908B1CBC35F20031C764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4EC6908D1CBC35F20031C764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC690921CBC35F20031C764 /* Observam.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Observam.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC690981CBC35F20031C764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC6909D1CBC35F20031C764 /* Observam.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Observam.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC690A11CBC35F20031C764 /* ObservamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObservamUITests.m; sourceTree = "<group>"; };
+		4EC690A31CBC35F20031C764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA8933D5F8A0E8D3B05780A /* Pods_Observam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Observam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B081C06317DBAAEDF2E8B122 /* Pods-Observam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Observam/Pods-Observam.release.xcconfig"; sourceTree = "<group>"; };
+		DB397EC1F2EE5146B7FF06FF /* Pods-Observam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Observam/Pods-Observam.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EC690731CBC35F10031C764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D910DC011DD31E312A3F92 /* Pods_Observam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC6908F1CBC35F20031C764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC6909A1CBC35F20031C764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EC6906D1CBC35F10031C764 = {
+			isa = PBXGroup;
+			children = (
+				4EC690781CBC35F20031C764 /* Observam */,
+				4EC690951CBC35F20031C764 /* ObservamTests */,
+				4EC690A01CBC35F20031C764 /* ObservamUITests */,
+				4EC690771CBC35F10031C764 /* Products */,
+				7E69B2D6CB53B83F1C3DE43B /* Pods */,
+				8DE0AA808D0CF67FE0792805 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4EC690771CBC35F10031C764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EC690761CBC35F10031C764 /* Observam.app */,
+				4EC690921CBC35F20031C764 /* Observam.xctest */,
+				4EC6909D1CBC35F20031C764 /* Observam.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EC690781CBC35F20031C764 /* Observam */ = {
+			isa = PBXGroup;
+			children = (
+				4EC1E4121CC936FD004586B0 /* MyPlayground.playground */,
+				4EC6907C1CBC35F20031C764 /* AppDelegate.h */,
+				4EC6907D1CBC35F20031C764 /* AppDelegate.m */,
+				4EC1E40D1CC93388004586B0 /* CareModel.swift */,
+				4EC690851CBC35F20031C764 /* Main.storyboard */,
+				4EC690881CBC35F20031C764 /* Assets.xcassets */,
+				4EC6907F1CBC35F20031C764 /* TodayVC.h */,
+				4EC690801CBC35F20031C764 /* TodayVC.m */,
+				4E1A4C4C1CC2A7DD00D3E550 /* TakeDrugVC.h */,
+				4E1A4C4D1CC2A7DD00D3E550 /* TakeDrugVC.m */,
+				4E1A4C4F1CC4C89700D3E550 /* DrugLeftVC.h */,
+				4E1A4C501CC4C89700D3E550 /* DrugLeftVC.m */,
+				4E1A4C521CC584B300D3E550 /* WhatFeelingVC.h */,
+				4E1A4C531CC584B300D3E550 /* WhatFeelingVC.m */,
+				4EC690821CBC35F20031C764 /* SymptomsVC.h */,
+				4EC690831CBC35F20031C764 /* SymptomsVC.m */,
+				4EC1E4081CC79681004586B0 /* HistoryVC.h */,
+				4EC1E4091CC79681004586B0 /* HistoryVC.m */,
+				4EC1E4131CCE0548004586B0 /* HistoryVC_Swift.swift */,
+				4EC1E43A1CD01BB7004586B0 /* ProfilVC.swift */,
+				4EC690791CBC35F20031C764 /* Supporting Files */,
+			);
+			path = Observam;
+			sourceTree = "<group>";
+		};
+		4EC690791CBC35F20031C764 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EC6908D1CBC35F20031C764 /* Info.plist */,
+				4EC6908A1CBC35F20031C764 /* LaunchScreen.storyboard */,
+				4EC6907A1CBC35F20031C764 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EC690951CBC35F20031C764 /* ObservamTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC1E4101CC9350C004586B0 /* ModelTests.swift */,
+				4EC690981CBC35F20031C764 /* Info.plist */,
+			);
+			path = ObservamTests;
+			sourceTree = "<group>";
+		};
+		4EC690A01CBC35F20031C764 /* ObservamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC690A11CBC35F20031C764 /* ObservamUITests.m */,
+				4EC690A31CBC35F20031C764 /* Info.plist */,
+			);
+			path = ObservamUITests;
+			sourceTree = "<group>";
+		};
+		7E69B2D6CB53B83F1C3DE43B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB397EC1F2EE5146B7FF06FF /* Pods-Observam.debug.xcconfig */,
+				B081C06317DBAAEDF2E8B122 /* Pods-Observam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8DE0AA808D0CF67FE0792805 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EA8933D5F8A0E8D3B05780A /* Pods_Observam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EC690751CBC35F10031C764 /* Observam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC690A61CBC35F20031C764 /* Build configuration list for PBXNativeTarget "Observam" */;
+			buildPhases = (
+				5894A9B640536C69505545F9 /* Check Pods Manifest.lock */,
+				4EC690721CBC35F10031C764 /* Sources */,
+				4EC690731CBC35F10031C764 /* Frameworks */,
+				4EC690741CBC35F10031C764 /* Resources */,
+				26B464F84753351C6A69A582 /* Embed Pods Frameworks */,
+				8E04E038BA2CCF22FF40D74A /* Copy Pods Resources */,
+				4EC1E4351CCEE3A6004586B0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Observam;
+			productName = "Observ'am";
+			productReference = 4EC690761CBC35F10031C764 /* Observam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EC690911CBC35F20031C764 /* ObservamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC690A91CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamTests" */;
+			buildPhases = (
+				4EC6908E1CBC35F20031C764 /* Sources */,
+				4EC6908F1CBC35F20031C764 /* Frameworks */,
+				4EC690901CBC35F20031C764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EC690941CBC35F20031C764 /* PBXTargetDependency */,
+			);
+			name = ObservamTests;
+			productName = "Observ'amTests";
+			productReference = 4EC690921CBC35F20031C764 /* Observam.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4EC6909C1CBC35F20031C764 /* ObservamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC690AC1CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamUITests" */;
+			buildPhases = (
+				4EC690991CBC35F20031C764 /* Sources */,
+				4EC6909A1CBC35F20031C764 /* Frameworks */,
+				4EC6909B1CBC35F20031C764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EC6909F1CBC35F20031C764 /* PBXTargetDependency */,
+			);
+			name = ObservamUITests;
+			productName = "Observ'amUITests";
+			productReference = 4EC6909D1CBC35F20031C764 /* Observam.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EC6906E1CBC35F10031C764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Godart;
+				TargetAttributes = {
+					4EC690751CBC35F10031C764 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4EC690911CBC35F20031C764 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4EC690751CBC35F10031C764;
+					};
+					4EC6909C1CBC35F20031C764 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4EC690751CBC35F10031C764;
+					};
+				};
+			};
+			buildConfigurationList = 4EC690711CBC35F10031C764 /* Build configuration list for PBXProject "Observam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EC6906D1CBC35F10031C764;
+			productRefGroup = 4EC690771CBC35F10031C764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EC690751CBC35F10031C764 /* Observam */,
+				4EC690911CBC35F20031C764 /* ObservamTests */,
+				4EC6909C1CBC35F20031C764 /* ObservamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EC690741CBC35F10031C764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC6908C1CBC35F20031C764 /* LaunchScreen.storyboard in Resources */,
+				4EC690891CBC35F20031C764 /* Assets.xcassets in Resources */,
+				4EC690871CBC35F20031C764 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC690901CBC35F20031C764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC6909B1CBC35F20031C764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26B464F84753351C6A69A582 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Observam/Pods-Observam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5894A9B640536C69505545F9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E04E038BA2CCF22FF40D74A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Observam/Pods-Observam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EC690721CBC35F10031C764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E1A4C4E1CC2A7DD00D3E550 /* TakeDrugVC.m in Sources */,
+				4EC1E40A1CC79681004586B0 /* HistoryVC.m in Sources */,
+				4EC1E40E1CC93388004586B0 /* CareModel.swift in Sources */,
+				4E1A4C541CC584B300D3E550 /* WhatFeelingVC.m in Sources */,
+				4EC690841CBC35F20031C764 /* SymptomsVC.m in Sources */,
+				4EC1E4141CCE0548004586B0 /* HistoryVC_Swift.swift in Sources */,
+				4EC1E43B1CD01BB7004586B0 /* ProfilVC.swift in Sources */,
+				4EC6907E1CBC35F20031C764 /* AppDelegate.m in Sources */,
+				4E1A4C511CC4C89700D3E550 /* DrugLeftVC.m in Sources */,
+				4EC690811CBC35F20031C764 /* TodayVC.m in Sources */,
+				4EC6907B1CBC35F20031C764 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC6908E1CBC35F20031C764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC1E4111CC9350C004586B0 /* ModelTests.swift in Sources */,
+				4EC1E40F1CC93388004586B0 /* CareModel.swift in Sources */,
+				4EC1E4151CCE0548004586B0 /* HistoryVC_Swift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC690991CBC35F20031C764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC690A21CBC35F20031C764 /* ObservamUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EC690941CBC35F20031C764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC690751CBC35F10031C764 /* Observam */;
+			targetProxy = 4EC690931CBC35F20031C764 /* PBXContainerItemProxy */;
+		};
+		4EC6909F1CBC35F20031C764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC690751CBC35F10031C764 /* Observam */;
+			targetProxy = 4EC6909E1CBC35F20031C764 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4EC690851CBC35F20031C764 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC690861CBC35F20031C764 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4EC6908A1CBC35F20031C764 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC6908B1CBC35F20031C764 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EC690A41CBC35F20031C764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4EC690A51CBC35F20031C764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EC690A71CBC35F20031C764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB397EC1F2EE5146B7FF06FF /* Pods-Observam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Observam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.godart.Observam;
+				PRODUCT_NAME = Observam;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EC690A81CBC35F20031C764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B081C06317DBAAEDF2E8B122 /* Pods-Observam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Observam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.godart.Observam;
+				PRODUCT_NAME = Observam;
+			};
+			name = Release;
+		};
+		4EC690AA1CBC35F20031C764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ObservamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amTests";
+				PRODUCT_NAME = Observam;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observam.app/Observam";
+			};
+			name = Debug;
+		};
+		4EC690AB1CBC35F20031C764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ObservamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amTests";
+				PRODUCT_NAME = Observam;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observam.app/Observam";
+			};
+			name = Release;
+		};
+		4EC690AD1CBC35F20031C764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ObservamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amUITests";
+				PRODUCT_NAME = Observam;
+				TEST_TARGET_NAME = Observam;
+			};
+			name = Debug;
+		};
+		4EC690AE1CBC35F20031C764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ObservamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amUITests";
+				PRODUCT_NAME = Observam;
+				TEST_TARGET_NAME = Observam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EC690711CBC35F10031C764 /* Build configuration list for PBXProject "Observam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC690A41CBC35F20031C764 /* Debug */,
+				4EC690A51CBC35F20031C764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC690A61CBC35F20031C764 /* Build configuration list for PBXNativeTarget "Observam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC690A71CBC35F20031C764 /* Debug */,
+				4EC690A81CBC35F20031C764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC690A91CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC690AA1CBC35F20031C764 /* Debug */,
+				4EC690AB1CBC35F20031C764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC690AC1CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC690AD1CBC35F20031C764 /* Debug */,
+				4EC690AE1CBC35F20031C764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EC6906E1CBC35F10031C764 /* Project object */;
+}

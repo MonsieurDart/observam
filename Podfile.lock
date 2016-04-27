@@ -1,0 +1,13 @@
+PODS:
+  - AFDateHelper (3.3.0)
+  - SwiftDate (3.0.8)
+
+DEPENDENCIES:
+  - AFDateHelper (~> 3.3)
+  - SwiftDate (~> 3.0)
+
+SPEC CHECKSUMS:
+  AFDateHelper: 137b5b9d70fe13b810e1817fa2d8c116d7988f5c
+  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
+
+COCOAPODS: 0.39.0
