@@ -9,19 +9,19 @@
 #import "TakeDrugVC.h"
 #import "AppDelegate.h"
 
-@interface TakeDrugVC ()
+@interface TakeDrugVC_OLD ()
 @property (strong, nonatomic) IBOutlet UIButton *takeDrugBtn;
 @property (strong, nonatomic) IBOutlet UIImageView *drugImgV;
 @end
 
 
 
-@implementation TakeDrugVC
+@implementation TakeDrugVC_OLD
 
 
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self performSegueWithIdentifier:@"showDrugLeftScreen" sender:nil];
+    //[self performSegueWithIdentifier:@"showDrugLeftScreen" sender:nil];
 }
 
 
@@ -71,6 +71,8 @@
                               completion:^(BOOL finished)
               {
                   self.drugImgV.transform = CGAffineTransformIdentity;
+
+                  [self performSegueWithIdentifier:@"showDrugLeftScreen" sender:nil];
               }];
          }
          else {

@@ -12,6 +12,18 @@ import AFDateHelper
 
 
 
+// TODO: This should be moved elsewhere…
+func globalTintColor() -> UIColor {
+    return UIColor(red:31.0/255, green:187.0/255, blue:151.0/255, alpha:1);
+}
+
+// TODO: Move this…
+var globalIsWizardCompleted = false
+
+var globalDrugAlreadyTaken = false
+
+
+
 struct Care {
 
     var date: NSDate = NSDate()
@@ -130,6 +142,10 @@ extension Array {
         return dictionary
     }
 }
+
+
+
+
 
 
 

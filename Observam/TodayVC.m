@@ -9,7 +9,7 @@
 #import "TodayVC.h"
 #import "AppDelegate.h"
 
-@interface TodayVC ()
+@interface TodayVC_OLD ()
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundView;
 @property (strong, nonatomic) IBOutlet UITableViewCell *tipCell;
 @property (strong, nonatomic) IBOutlet UILabel *tipOfTheDay;
@@ -17,7 +17,7 @@
 
 
 
-@implementation TodayVC
+@implementation TodayVC_OLD
 
 
 
@@ -32,9 +32,15 @@
 
     self.tableView.estimatedRowHeight = 44;
 
-    self.tipOfTheDay.text = @"Natus voluptatibus ut fuga qui accusamus. Eum corporis sint incidunt corporis mito hecta ipsum.";
+    self.tipOfTheDay.text = @"Lavez-vous les mains avant et après chaque fois que vous avez touché les comprimés.";
 
     self.tableView.backgroundView = self.backgroundView;
+}
+
+
+
+- (IBAction)relaunchWizard:(id)sender {
+//    globalIsWizardCompleted = false
 }
 
 

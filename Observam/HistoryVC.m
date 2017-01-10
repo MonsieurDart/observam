@@ -23,7 +23,7 @@ const NSString *kDisplayDescription = @"displayDescription";
 
 NSDictionary *careHistory;
 
-#warning Rewrite with pipe blocks.
+//#warning Rewrite with pipe blocks.
 
 NSArray *caresForGroupId(NSUInteger groupId) {
 

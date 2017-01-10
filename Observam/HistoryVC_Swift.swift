@@ -37,12 +37,6 @@ class HistoryVC_Swift: UITableViewController {
 
 
 
-    func globalTintColor() -> UIColor {
-        return UIColor(red:31.0/255, green:187.0/255, blue:151.0/255, alpha:1);
-    }
-
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,12 +47,13 @@ class HistoryVC_Swift: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
 
         self.navigationItem.rightBarButtonItem = self.editBtnItem
+    }
 
-        CareHistory.add("Un peu fatigué (2/5)", atDate: NSDate())
-        CareHistory.add("Prise du traitement", atDate: NSDate(timeIntervalSinceNow:-60))
-        CareHistory.add("Prise du traitement", atDate: NSDate(timeIntervalSinceNow:-60*60*24.2))
-        CareHistory.add("Oubli du traitement", atDate: NSDate(timeIntervalSinceNow:-60*60*28.6))
-        CareHistory.add("Tout va bien", atDate: NSDate(timeIntervalSinceNow:-60*60*28.34))
+
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 
 
@@ -91,7 +86,15 @@ class HistoryVC_Swift: UITableViewController {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("historyCell", forIndexPath: indexPath)
 
-        let care = CareHistory.caresGroupedByDay()[indexPath.section][indexPath.row]
+        let groupedCares = CareHistory.caresGroupedByDay()
+        if indexPath.section >= groupedCares.count ||
+            indexPath.row >= groupedCares[indexPath.section].count {
+            cell.detailTextLabel?.text = ""
+            cell.textLabel?.text = ""
+            return cell
+        }
+
+        let care = groupedCares[indexPath.section][indexPath.row]
 
 //        cell.detailTextLabel?.text = timeFormatter().stringFromDate(care.date)
         cell.detailTextLabel?.text = care.date.toString(dateStyle: .NoStyle, timeStyle: .ShortStyle, doesRelativeDateFormatting: true)

@@ -8,18 +8,31 @@
 
 #import "WhatFeelingVC.h"
 
-@interface WhatFeelingVC ()
+@interface WhatFeelingVC_OLD ()
 
 @end
 
 
 
-@implementation WhatFeelingVC
+@implementation WhatFeelingVC_OLD
 
+- (IBAction)bad:(id)sender {
+    [self performSegueWithIdentifier:@"showSymptomsScene" sender:nil];
+}
 
+- (IBAction)goodOrBad:(id)sender {
+    [self performSegueWithIdentifier:@"showSymptomsScene" sender:nil];
+}
+
+- (IBAction)good:(id)sender {
+
+//    CareHistory.add("Tout va bien", atDate: NSDate())
+
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self performSegueWithIdentifier:@"showSymptomsScene" sender:nil];
+    //[self performSegueWithIdentifier:@"showSymptomsScene" sender:nil];
 }
 
 

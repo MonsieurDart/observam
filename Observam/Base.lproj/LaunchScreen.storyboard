@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="eTO-wf-aA7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,5 +23,50 @@
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
+        <!--Splash-->
+        <scene sceneID="h9O-aF-kZP">
+            <objects>
+                <viewController title="Splash" id="eTO-wf-aA7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LJe-51-ReK"/>
+                        <viewControllerLayoutGuide type="bottom" id="E9E-Sm-Lhx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ncR-qC-doI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.25" contentMode="center" image="TygartsStateForest" translatesAutoresizingMaskIntoConstraints="NO" id="ttA-7y-fFm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Observ'am" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-Pc-90o">
+                                <rect key="frame" x="20" y="80" width="560" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" red="0.1215686275" green="0.73333333329999995" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vuL-Pc-90o" firstAttribute="trailing" secondItem="ncR-qC-doI" secondAttribute="trailingMargin" id="JbL-sY-r7L"/>
+                            <constraint firstItem="vuL-Pc-90o" firstAttribute="leading" secondItem="ncR-qC-doI" secondAttribute="leadingMargin" id="USd-N4-VIU"/>
+                            <constraint firstItem="ttA-7y-fFm" firstAttribute="leading" secondItem="ncR-qC-doI" secondAttribute="leading" id="a7q-EC-4aB"/>
+                            <constraint firstAttribute="trailing" secondItem="ttA-7y-fFm" secondAttribute="trailing" id="aFG-Rn-LrF"/>
+                            <constraint firstItem="ttA-7y-fFm" firstAttribute="top" secondItem="ncR-qC-doI" secondAttribute="top" id="j15-ih-f83"/>
+                            <constraint firstItem="vuL-Pc-90o" firstAttribute="top" secondItem="LJe-51-ReK" secondAttribute="bottom" constant="60" id="k8y-a3-Bja"/>
+                            <constraint firstItem="E9E-Sm-Lhx" firstAttribute="top" secondItem="ttA-7y-fFm" secondAttribute="bottom" id="yNX-Xv-rmd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Accueil" id="ae0-GB-G2S">
+                        <barButtonItem key="backBarButtonItem" title="Retour" id="Pf8-9o-uRP"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMt-KF-rcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472" y="-1351"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="TygartsStateForest" width="1024" height="768"/>
+    </resources>
+    <color key="tintColor" red="0.1215686275" green="0.73333333329999995" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>

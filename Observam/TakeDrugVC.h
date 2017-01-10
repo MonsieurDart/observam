@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TakeDrugVC : UIViewController
+@interface TakeDrugVC_OLD : UIViewController
 
 @end

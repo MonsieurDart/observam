@@ -1,15 +1,19 @@
 //
-//  ProfilVC.swift
+//  CureVC.swift
 //  Observam
 //
-//  Created by Mathieu Godart on 26/04/2016.
+//  Created by Mathieu Godart on 28/04/2016.
 //  Copyright © 2016 Godart. All rights reserved.
 //
 
 import UIKit
 
-class ProfilVC: UITableViewController {
+class CureVC: UITableViewController {
 
+    @IBOutlet var validateBtn: UIButton!
+    @IBOutlet var frequencyLbl: UILabel!
+    @IBOutlet var timesLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,14 +29,16 @@ class ProfilVC: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
 
-    override func tableView(tableView: UITableView,
-                            willDisplayHeaderView view: UIView,
-                                                  forSection section: Int) {
-        let header = view as? UITableViewHeaderFooterView
-        header?.textLabel?.textColor = globalTintColor()
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.validateBtn.hidden = globalIsWizardCompleted
     }
+
+
+
+    // MARK: - Table view data source
 
 //    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections
@@ -42,6 +48,62 @@ class ProfilVC: UITableViewController {
 //    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        // #warning Incomplete implementation, return the number of rows
 //        return 0
+//    }
+
+
+    override func tableView(tableView: UITableView,
+                            willDisplayHeaderView view: UIView,
+                                                  forSection section: Int) {
+        let header = view as? UITableViewHeaderFooterView
+        header?.textLabel?.textColor = globalTintColor()
+    }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+        if (indexPath == NSIndexPath(forRow: 1, inSection: 1)) {
+            return
+        }
+
+        if (indexPath == NSIndexPath(forRow: 0, inSection: 1)) {
+            let alert = UIAlertController(title: "Fréquence de prise",
+                                          message: nil,
+                                          preferredStyle: .ActionSheet)
+
+            alert.addAction(UIAlertAction(title: "Une fois par jour",
+                style: .Default, handler: { (action: UIAlertAction) in
+                    self.frequencyLbl.text = action.title
+            }))
+            alert.addAction(UIAlertAction(title: "Deux fois par jour",
+                style: .Default, handler: { (action: UIAlertAction) in
+                    self.frequencyLbl.text = action.title
+            }))
+            alert.addAction(UIAlertAction(title: "Trois fois par jour",
+                style: .Default, handler: { (action: UIAlertAction) in
+                    self.frequencyLbl.text = action.title
+            }))
+            alert.addAction(UIAlertAction(title: "Quatre fois par jour",
+                style: .Default, handler: { (action: UIAlertAction) in
+                    self.frequencyLbl.text = action.title
+            }))
+            alert.addAction(UIAlertAction(title: "Annuler",
+                style: .Cancel, handler: { (action: UIAlertAction) in
+            }))
+
+            alert.view.tintColor = globalTintColor()
+
+            presentViewController(alert, animated: true, completion:nil)
+        }
+
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+
+//    @IBAction func unwindToCureVC(sender: UIStoryboardSegue)
+//    {
+//        let sourceViewController = sender.sourceViewController
+//        // Pull any data from the view controller which initiated the unwind segue.
+//    }
+//
+//    override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
 //    }
 
     /*

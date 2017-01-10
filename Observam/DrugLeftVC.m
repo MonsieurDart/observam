@@ -18,8 +18,14 @@
 
 
 
-- (void)viewDidAppear:(BOOL)animated {
+- (IBAction)yes:(id)sender {
     [self performSegueWithIdentifier:@"showWhatFeelingScene" sender:nil];
+}
+
+
+
+- (void)viewDidAppear:(BOOL)animated {
+    //[self performSegueWithIdentifier:@"showWhatFeelingScene" sender:nil];
 }
 
 

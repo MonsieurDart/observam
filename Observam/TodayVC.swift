@@ -1,14 +1,18 @@
 //
-//  ProfilVC.swift
+//  TodayVC.swift
 //  Observam
 //
-//  Created by Mathieu Godart on 26/04/2016.
+//  Created by Mathieu Godart on 08/05/2016.
 //  Copyright © 2016 Godart. All rights reserved.
 //
 
 import UIKit
 
-class ProfilVC: UITableViewController {
+class TodayVC: UITableViewController {
+
+    @IBOutlet var tipCell: UITableViewCell!
+    @IBOutlet var tipOfTheDay: UILabel!
+    @IBOutlet var backgroundView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,21 +22,70 @@ class ProfilVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+
+        self.tableView.estimatedRowHeight = 44
+
+        self.tipOfTheDay.text = "Lavez-vous les mains avant et après chaque fois que vous avez touché les comprimés."
+
+        self.tableView.backgroundView = self.backgroundView
     }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+
+
+    @IBAction func relaunchWizard(sender: AnyObject) {
+        globalIsWizardCompleted = false
+    }
+
+
+
+    @IBAction func readMore(sender: AnyObject) {
+        self.navigationController?.tabBarController?.selectedIndex = 1
+    }
+    
+    
+    
+    @IBAction func didFillUpStock(sender: AnyObject) {
+
+        let alert = UIAlertController(title: nil,
+                                      message: nil,
+                                      preferredStyle: .ActionSheet)
+
+        alert.addAction(UIAlertAction(title: "J'ai fait le plein",
+            style: .Default, handler: { (action: UIAlertAction) in
+        }))
+        alert.addAction(UIAlertAction(title: "Annuler",
+            style: .Cancel, handler: { (action: UIAlertAction) in
+        }))
+
+        alert.view.tintColor = globalTintColor()
+
+        presentViewController(alert, animated: true, completion:nil)
+    }
+
+
+
     // MARK: - Table view data source
 
-    override func tableView(tableView: UITableView,
-                            willDisplayHeaderView view: UIView,
-                                                  forSection section: Int) {
+
+
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+
+
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+
         let header = view as? UITableViewHeaderFooterView
         header?.textLabel?.textColor = globalTintColor()
     }
+
 
 //    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections

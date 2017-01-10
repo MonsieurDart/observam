@@ -19,7 +19,7 @@
 
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self performSegueWithIdentifier:@"showFeelingTextScene" sender:nil];
+    //[self performSegueWithIdentifier:@"showFeelingTextScene" sender:nil];
 }
 
 

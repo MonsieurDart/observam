@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WhatFeelingVC : UIViewController
+@interface WhatFeelingVC_OLD: UIViewController
 
 @end

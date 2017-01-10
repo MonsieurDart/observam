@@ -1,14 +1,14 @@
 //
-//  ProfilVC.swift
+//  TipsVC.swift
 //  Observam
 //
-//  Created by Mathieu Godart on 26/04/2016.
+//  Created by Mathieu Godart on 30/04/2016.
 //  Copyright © 2016 Godart. All rights reserved.
 //
 
 import UIKit
 
-class ProfilVC: UITableViewController {
+class TipsVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,11 @@ class ProfilVC: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
+    
     // MARK: - Table view data source
+
+
 
     override func tableView(tableView: UITableView,
                             willDisplayHeaderView view: UIView,
@@ -34,15 +38,7 @@ class ProfilVC: UITableViewController {
         header?.textLabel?.textColor = globalTintColor()
     }
 
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-//
-//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//        return 0
-//    }
+
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

@@ -1,14 +1,21 @@
 //
-//  ProfilVC.swift
+//  OrdoScanVC.swift
 //  Observam
 //
-//  Created by Mathieu Godart on 26/04/2016.
+//  Created by Mathieu Godart on 29/04/2016.
 //  Copyright © 2016 Godart. All rights reserved.
 //
 
 import UIKit
+import AVFoundation
 
-class ProfilVC: UITableViewController {
+class OrdoScanVC: UIViewController {
+
+    @IBOutlet var scanView: UIImageView!
+
+    var session = AVCaptureSession()
+    var prevLayer: AVCaptureVideoPreviewLayer? = nil
+    var device: AVCaptureDevice? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,21 +25,61 @@ class ProfilVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+
+        device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+
+        do {
+            let input = try AVCaptureDeviceInput(device: device)
+            session.addInput(input)
+
+        } catch {
+            NSLog("Could not create capture device input.")
+            return
+        }
+
+//        let output = AVCaptureMetadataOutput()
+//        output.setMetadataObjectsDelegate(self, queue:dispatch_get_main_queue())
+//        session.addOutput(output)
+//
+//        output.metadataObjectTypes = output.availableMetadataObjectTypes
+
+        prevLayer = AVCaptureVideoPreviewLayer(session:session)
+        prevLayer?.frame = self.scanView.bounds
+        prevLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
+        self.scanView.layer.addSublayer(prevLayer!)
     }
 
+
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        session.startRunning()
+    }
+
+
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        prevLayer?.frame = self.scanView.bounds
+    }
+
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+
+
     // MARK: - Table view data source
 
-    override func tableView(tableView: UITableView,
-                            willDisplayHeaderView view: UIView,
-                                                  forSection section: Int) {
-        let header = view as? UITableViewHeaderFooterView
-        header?.textLabel?.textColor = globalTintColor()
-    }
+//    override func tableView(tableView: UITableView,
+//                            willDisplayHeaderView view: UIView,
+//                                                  forSection section: Int) {
+//        let header = view as? UITableViewHeaderFooterView
+//        header?.textLabel?.textColor = globalTintColor()
+//    }
 
 //    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections
