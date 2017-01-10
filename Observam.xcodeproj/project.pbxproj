@@ -38,7 +38,6 @@
 		4EC690891CBC35F20031C764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC690881CBC35F20031C764 /* Assets.xcassets */; };
 		4EC6908C1CBC35F20031C764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC6908A1CBC35F20031C764 /* LaunchScreen.storyboard */; };
 		4EC690A21CBC35F20031C764 /* ObservamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC690A11CBC35F20031C764 /* ObservamUITests.m */; };
-		84D910DC011DD31E312A3F92 /* Pods_Observam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA8933D5F8A0E8D3B05780A /* Pods_Observam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,9 +114,6 @@
 		4EC6909D1CBC35F20031C764 /* Observam.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Observam.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC690A11CBC35F20031C764 /* ObservamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObservamUITests.m; sourceTree = "<group>"; };
 		4EC690A31CBC35F20031C764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EA8933D5F8A0E8D3B05780A /* Pods_Observam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Observam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B081C06317DBAAEDF2E8B122 /* Pods-Observam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Observam/Pods-Observam.release.xcconfig"; sourceTree = "<group>"; };
-		DB397EC1F2EE5146B7FF06FF /* Pods-Observam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Observam/Pods-Observam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D910DC011DD31E312A3F92 /* Pods_Observam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +148,6 @@
 				4EC690951CBC35F20031C764 /* ObservamTests */,
 				4EC690A01CBC35F20031C764 /* ObservamUITests */,
 				4EC690771CBC35F10031C764 /* Products */,
-				7E69B2D6CB53B83F1C3DE43B /* Pods */,
 				8DE0AA808D0CF67FE0792805 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -237,19 +231,9 @@
 			path = ObservamUITests;
 			sourceTree = "<group>";
 		};
-		7E69B2D6CB53B83F1C3DE43B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DB397EC1F2EE5146B7FF06FF /* Pods-Observam.debug.xcconfig */,
-				B081C06317DBAAEDF2E8B122 /* Pods-Observam.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		8DE0AA808D0CF67FE0792805 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5EA8933D5F8A0E8D3B05780A /* Pods_Observam.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -261,12 +245,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EC690A61CBC35F20031C764 /* Build configuration list for PBXNativeTarget "Observam" */;
 			buildPhases = (
-				5894A9B640536C69505545F9 /* Check Pods Manifest.lock */,
 				4EC690721CBC35F10031C764 /* Sources */,
 				4EC690731CBC35F10031C764 /* Frameworks */,
 				4EC690741CBC35F10031C764 /* Resources */,
-				26B464F84753351C6A69A582 /* Embed Pods Frameworks */,
-				8E04E038BA2CCF22FF40D74A /* Copy Pods Resources */,
 				4EC1E4351CCEE3A6004586B0 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -321,7 +302,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Godart;
 				TargetAttributes = {
 					4EC690751CBC35F10031C764 = {
@@ -392,54 +373,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		26B464F84753351C6A69A582 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Observam/Pods-Observam-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5894A9B640536C69505545F9 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8E04E038BA2CCF22FF40D74A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Observam/Pods-Observam-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EC690721CBC35F10031C764 /* Sources */ = {
@@ -540,8 +473,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -563,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -584,8 +519,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -601,22 +538,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		4EC690A71CBC35F20031C764 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB397EC1F2EE5146B7FF06FF /* Pods-Observam.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Observam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -630,13 +567,12 @@
 		};
 		4EC690A81CBC35F20031C764 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B081C06317DBAAEDF2E8B122 /* Pods-Observam.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Observam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -652,6 +588,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ObservamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amTests";
@@ -667,6 +604,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ObservamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amTests";

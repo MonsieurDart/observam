@@ -96,8 +96,8 @@ class HistoryVC_Swift: UITableViewController {
 
         let care = groupedCares[indexPath.section][indexPath.row]
 
-//        cell.detailTextLabel?.text = timeFormatter().stringFromDate(care.date)
-        cell.detailTextLabel?.text = care.date.toString(dateStyle: .none, timeStyle: .short, doesRelativeDateFormatting: true)
+        cell.detailTextLabel?.text = timeFormatter().string(from: care.date)
+//        cell.detailTextLabel?.text = care.date.toString(dateStyle: .none, timeStyle: .short, doesRelativeDateFormatting: true)
         cell.textLabel?.text = care.title
 
         return cell
@@ -109,7 +109,10 @@ class HistoryVC_Swift: UITableViewController {
 
         let careGroup = CareHistory.caresGroupedByDay()[section]
 
-        return careGroup.first?.date.toString(dateStyle: .short, timeStyle: .none, doesRelativeDateFormatting: true)
+        return "Une date à déterminer…"
+//        return relativeDateFormatter().string(from: careGroup.first?.date?)
+
+//        return careGroup.first?.date.toString(dateStyle: .short, timeStyle: .none, doesRelativeDateFormatting: true)
     }
 
 

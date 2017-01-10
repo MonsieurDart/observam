@@ -9,6 +9,10 @@
 import XCTest
 import SwiftDate
 import SwiftDate.Swift
+import CareModel
+import CareHistory
+
+
 
 let testString1 = "Test string 1"
 let testString2 = "Test string 2"
@@ -57,7 +61,7 @@ class ModelTests: XCTestCase {
 //        let region = Region(timeZoneName: TimeZoneName.EuropeParis)
 //        print(testDate1.startOf(.Day, inRegion: region))
 
-        let groupedCares = CareHistory.groupedCares()
+        let groupedCares = CareHistory.caresGroupedByDay()
         print(groupedCares)
     }
 
