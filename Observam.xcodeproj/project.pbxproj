@@ -327,6 +327,7 @@
 					4EC690751CBC35F10031C764 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 6TKSKZ8KG5;
+						LastSwiftMigration = 0820;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -335,10 +336,12 @@
 					};
 					4EC690911CBC35F20031C764 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = 4EC690751CBC35F10031C764;
 					};
 					4EC6909C1CBC35F20031C764 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = 4EC690751CBC35F10031C764;
 					};
 				};
@@ -621,6 +624,7 @@
 				PRODUCT_NAME = Observam;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -639,6 +643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.godart.Observam;
 				PRODUCT_NAME = Observam;
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -652,6 +657,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amTests";
 				PRODUCT_NAME = Observam;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observam.app/Observam";
 			};
 			name = Debug;
@@ -665,6 +671,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amTests";
 				PRODUCT_NAME = Observam;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observam.app/Observam";
 			};
 			name = Release;
@@ -676,6 +683,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amUITests";
 				PRODUCT_NAME = Observam;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Observam;
 			};
 			name = Debug;
@@ -687,6 +695,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amUITests";
 				PRODUCT_NAME = Observam;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Observam;
 			};
 			name = Release;

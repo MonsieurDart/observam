@@ -26,7 +26,7 @@ class OrdoScanVC: UIViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
 
-        device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
 
         do {
             let input = try AVCaptureDeviceInput(device: device)
@@ -51,7 +51,7 @@ class OrdoScanVC: UIViewController {
 
 
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         session.startRunning()
     }

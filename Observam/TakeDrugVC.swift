@@ -20,8 +20,8 @@ class TakeDrugVC: UIViewController {
 
         if (globalDrugAlreadyTaken) {
             self.drugImgV.alpha = 1
-            self.takeDrugBtn.setTitle("Traitement déjà pris. Bravo !", forState:.Normal)
-            self.takeDrugBtn.userInteractionEnabled = false
+            self.takeDrugBtn.setTitle("Traitement déjà pris. Bravo !", for:UIControlState())
+            self.takeDrugBtn.isUserInteractionEnabled = false
         }
         else {
             self.drugImgV.alpha = self.defaultDrugImgAlpha()
@@ -42,23 +42,23 @@ class TakeDrugVC: UIViewController {
 
 
     func didTakeDrug() {
-        CareHistory.add("Prise du traitement", atDate: NSDate())
+        CareHistory.add("Prise du traitement", atDate: Date())
     }
     
     
     
-    @IBAction func takeDrugBtnUp(sender: AnyObject) {
+    @IBAction func takeDrugBtnUp(_ sender: AnyObject) {
         NSLog("Drug taking: btn released")
         drugImgV.layer.removeAllAnimations()
     }
 
 
 
-    @IBAction func takeDrugBtnDown(sender: AnyObject) {
+    @IBAction func takeDrugBtnDown(_ sender: AnyObject) {
         NSLog("Drug taking: start");
 
 //        UIView.animateWithDuration(0.8, delay: 0, options: .CurveLinear, animations: {
-        UIView.animateWithDuration(1.1, delay: 0, options: .CurveLinear, animations: {
+        UIView.animate(withDuration: 1.1, delay: 0, options: .curveLinear, animations: {
             self.drugImgV.alpha = 1
 
             }, completion: { (finished) in
@@ -68,31 +68,31 @@ class TakeDrugVC: UIViewController {
 
                     self.didTakeDrug()
 
-                    self.takeDrugBtn.setTitle("Traitement pris. Bravo !", forState:.Normal)
-                    self.takeDrugBtn.userInteractionEnabled = false
+                    self.takeDrugBtn.setTitle("Traitement pris. Bravo !", for:UIControlState())
+                    self.takeDrugBtn.isUserInteractionEnabled = false
 
 //                    UIView.animateWithDuration(0.12, animations:
-                    UIView.animateWithDuration(0.12, animations:
+                    UIView.animate(withDuration: 0.12, animations:
                         {
 //                            self.drugImgV.transform = CGAffineTransformMakeScale(1.14, 1.14)
-                            self.drugImgV.transform = CGAffineTransformMakeScale(1.3, 1.3)
+                            self.drugImgV.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
 
                         }, completion: { (finished) in
 
-                            UIView.animateWithDuration(0.08, animations:
+                            UIView.animate(withDuration: 0.08, animations:
                                 {
-                                    self.drugImgV.transform = CGAffineTransformIdentity
+                                    self.drugImgV.transform = CGAffineTransform.identity
 
                                 }, completion: { (finished) in
 
-                                    self.performSegueWithIdentifier("showDrugLeftScreen", sender:nil)
+                                    self.performSegue(withIdentifier: "showDrugLeftScreen", sender:nil)
                             })
                     })
                 }
                 else {
                     NSLog("Drug taking: cancel done")
 
-                    UIView.animateWithDuration(0.5, animations: {
+                    UIView.animate(withDuration: 0.5, animations: {
                         self.drugImgV.alpha = self.defaultDrugImgAlpha()
                     })
                 }

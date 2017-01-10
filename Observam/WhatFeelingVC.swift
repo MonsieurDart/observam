@@ -21,17 +21,17 @@ class WhatFeelingVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func good(sender: AnyObject) {
-        CareHistory.add("Tout va bien", atDate: NSDate())
-        self.navigationController?.popToRootViewControllerAnimated(true)
+    @IBAction func good(_ sender: AnyObject) {
+        CareHistory.add("Tout va bien", atDate: Date())
+        self.navigationController?.popToRootViewController(animated: true)
     }
 
-    @IBAction func goodOrBad(sender: AnyObject) {
-        performSegueWithIdentifier("showSymptomsScene", sender: nil)
+    @IBAction func goodOrBad(_ sender: AnyObject) {
+        performSegue(withIdentifier: "showSymptomsScene", sender: nil)
     }
 
-    @IBAction func bad(sender: AnyObject) {
-        performSegueWithIdentifier("showSymptomsScene", sender: nil)
+    @IBAction func bad(_ sender: AnyObject) {
+        performSegue(withIdentifier: "showSymptomsScene", sender: nil)
     }
 
 //    - (IBAction)bad:(id)sender {

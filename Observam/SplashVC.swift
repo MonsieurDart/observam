@@ -24,22 +24,22 @@ class SplashVC: UIViewController {
     }
 
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
 
 
-    @IBAction func wizardCompleted(sender: AnyObject) {
+    @IBAction func wizardCompleted(_ sender: AnyObject) {
 
         globalIsWizardCompleted = true
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 
 

@@ -12,9 +12,9 @@ import SwiftDate.Swift
 
 let testString1 = "Test string 1"
 let testString2 = "Test string 2"
-let testDate1 = NSDate()
-let testDate2 = NSDate(timeIntervalSinceNow: -60)
-let testDate3 = NSDate(timeIntervalSinceNow: -60*60*24*3)
+let testDate1 = Date()
+let testDate2 = Date(timeIntervalSinceNow: -60)
+let testDate3 = Date(timeIntervalSinceNow: -60*60*24*3)
 
 
 
@@ -51,9 +51,9 @@ class ModelTests: XCTestCase {
         CareHistory.add(testString1, atDate: testDate1)
         CareHistory.add(testString1, atDate: testDate2)
 
-        print(testDate1.descriptionWithLocale(NSLocale.currentLocale()))
-        print(testDate1.descriptionWithLocale(NSLocale.currentLocale()))
-        print(testDate1.dateAtStartOfDay().descriptionWithLocale(NSLocale.currentLocale()))
+        print(testDate1.description(with: Locale.current))
+        print(testDate1.description(with: Locale.current))
+        print(testDate1.dateAtStartOfDay().description(with: Locale.current))
 //        let region = Region(timeZoneName: TimeZoneName.EuropeParis)
 //        print(testDate1.startOf(.Day, inRegion: region))
 

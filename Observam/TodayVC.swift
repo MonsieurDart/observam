@@ -39,34 +39,34 @@ class TodayVC: UITableViewController {
 
 
 
-    @IBAction func relaunchWizard(sender: AnyObject) {
+    @IBAction func relaunchWizard(_ sender: AnyObject) {
         globalIsWizardCompleted = false
     }
 
 
 
-    @IBAction func readMore(sender: AnyObject) {
+    @IBAction func readMore(_ sender: AnyObject) {
         self.navigationController?.tabBarController?.selectedIndex = 1
     }
     
     
     
-    @IBAction func didFillUpStock(sender: AnyObject) {
+    @IBAction func didFillUpStock(_ sender: AnyObject) {
 
         let alert = UIAlertController(title: nil,
                                       message: nil,
-                                      preferredStyle: .ActionSheet)
+                                      preferredStyle: .actionSheet)
 
         alert.addAction(UIAlertAction(title: "J'ai fait le plein",
-            style: .Default, handler: { (action: UIAlertAction) in
+            style: .default, handler: { (action: UIAlertAction) in
         }))
         alert.addAction(UIAlertAction(title: "Annuler",
-            style: .Cancel, handler: { (action: UIAlertAction) in
+            style: .cancel, handler: { (action: UIAlertAction) in
         }))
 
         alert.view.tintColor = globalTintColor()
 
-        presentViewController(alert, animated: true, completion:nil)
+        present(alert, animated: true, completion:nil)
     }
 
 
@@ -75,12 +75,12 @@ class TodayVC: UITableViewController {
 
 
 
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
 
 
-    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
 
         let header = view as? UITableViewHeaderFooterView
         header?.textLabel?.textColor = globalTintColor()

@@ -37,7 +37,7 @@ class OtherCureVC: UITableViewController {
 //        return 0
 //    }
 
-    override func tableView(tableView: UITableView,
+    override func tableView(_ tableView: UITableView,
                             willDisplayHeaderView view: UIView,
                                                   forSection section: Int) {
         let header = view as? UITableViewHeaderFooterView

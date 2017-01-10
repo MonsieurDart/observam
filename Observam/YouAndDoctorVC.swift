@@ -42,9 +42,9 @@ class YouAndDoctorVC: UITableViewController {
 
 
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.validateBtn.hidden = globalIsWizardCompleted
+        self.validateBtn.isHidden = globalIsWizardCompleted
 //        navigationController?.setNavigationBarHidden(false, animated: true)
 
         nameLbl.text = name
@@ -55,7 +55,7 @@ class YouAndDoctorVC: UITableViewController {
 
 
 
-    override func tableView(tableView: UITableView,
+    override func tableView(_ tableView: UITableView,
                             willDisplayHeaderView view: UIView,
                                                   forSection section: Int) {
         let header = view as? UITableViewHeaderFooterView
@@ -118,33 +118,33 @@ class YouAndDoctorVC: UITableViewController {
 
 
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
 
-        let title = self.tableView(tableView, cellForRowAtIndexPath: indexPath).textLabel?.text
-        let editedTxtLabel = self.tableView(tableView, cellForRowAtIndexPath: indexPath).detailTextLabel
+        let title = self.tableView(tableView, cellForRowAt: indexPath).textLabel?.text
+        let editedTxtLabel = self.tableView(tableView, cellForRowAt: indexPath).detailTextLabel
         var defaultText = editedTxtLabel?.text
 
         switch indexPath {
-        case NSIndexPath(forRow: 0, inSection: 0):
+        case IndexPath(row: 0, section: 0):
             queryText(defaultText, title: "Quel est votre nom ?") {
                 name = $0
                 editedTxtLabel?.text = name
                 tableView.reloadData()
             }
             return
-        case NSIndexPath(forRow: 1, inSection: 0):
+        case IndexPath(row: 1, section: 0):
             gender = (gender == "Femme") ? "Homme" : "Femme"
             editedTxtLabel?.text = gender
             tableView.reloadData()
             return
-        case NSIndexPath(forRow: 2, inSection: 0):
+        case IndexPath(row: 2, section: 0):
 //            defaultText = "\(Int(editedTxtLabel?.text ?? ""))"
             let ans = " ans"
-            defaultText = defaultText?.stringByReplacingOccurrencesOfString(ans, withString: "")
-            queryText(defaultText, title: "Quel est votre âge ?", type: .NumberPad) {
-                age = $0?.stringByAppendingString(ans)
+            defaultText = defaultText?.replacingOccurrences(of: ans, with: "")
+            queryText(defaultText, title: "Quel est votre âge ?", type: .numberPad) {
+                age = ($0)! + ans
                 editedTxtLabel?.text = age
                 tableView.reloadData()
             }
@@ -160,15 +160,15 @@ class YouAndDoctorVC: UITableViewController {
 
 
 
-    func queryText(defaultText: String?, title: String?, type: UIKeyboardType = .Default, completion: ((String?) -> Void)) {
-        let alert = UIAlertController(title: title, message: nil, preferredStyle: .Alert)
-        alert.addTextFieldWithConfigurationHandler {
+    func queryText(_ defaultText: String?, title: String?, type: UIKeyboardType = .default, completion: @escaping ((String?) -> Void)) {
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alert.addTextField {
             $0.text = defaultText
             $0.keyboardType = type
         }
-        alert.addAction(UIAlertAction(title: "OK", style: .Default) { (action) in
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { (action) in
             completion(alert.textFields?.first?.text) })
-        presentViewController(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
 
     

@@ -31,9 +31,9 @@ class CureVC: UITableViewController {
 
 
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.validateBtn.hidden = globalIsWizardCompleted
+        self.validateBtn.isHidden = globalIsWizardCompleted
     }
 
 
@@ -51,50 +51,50 @@ class CureVC: UITableViewController {
 //    }
 
 
-    override func tableView(tableView: UITableView,
+    override func tableView(_ tableView: UITableView,
                             willDisplayHeaderView view: UIView,
                                                   forSection section: Int) {
         let header = view as? UITableViewHeaderFooterView
         header?.textLabel?.textColor = globalTintColor()
     }
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        if (indexPath == NSIndexPath(forRow: 1, inSection: 1)) {
+        if (indexPath == IndexPath(row: 1, section: 1)) {
             return
         }
 
-        if (indexPath == NSIndexPath(forRow: 0, inSection: 1)) {
+        if (indexPath == IndexPath(row: 0, section: 1)) {
             let alert = UIAlertController(title: "Fréquence de prise",
                                           message: nil,
-                                          preferredStyle: .ActionSheet)
+                                          preferredStyle: .actionSheet)
 
             alert.addAction(UIAlertAction(title: "Une fois par jour",
-                style: .Default, handler: { (action: UIAlertAction) in
+                style: .default, handler: { (action: UIAlertAction) in
                     self.frequencyLbl.text = action.title
             }))
             alert.addAction(UIAlertAction(title: "Deux fois par jour",
-                style: .Default, handler: { (action: UIAlertAction) in
+                style: .default, handler: { (action: UIAlertAction) in
                     self.frequencyLbl.text = action.title
             }))
             alert.addAction(UIAlertAction(title: "Trois fois par jour",
-                style: .Default, handler: { (action: UIAlertAction) in
+                style: .default, handler: { (action: UIAlertAction) in
                     self.frequencyLbl.text = action.title
             }))
             alert.addAction(UIAlertAction(title: "Quatre fois par jour",
-                style: .Default, handler: { (action: UIAlertAction) in
+                style: .default, handler: { (action: UIAlertAction) in
                     self.frequencyLbl.text = action.title
             }))
             alert.addAction(UIAlertAction(title: "Annuler",
-                style: .Cancel, handler: { (action: UIAlertAction) in
+                style: .cancel, handler: { (action: UIAlertAction) in
             }))
 
             alert.view.tintColor = globalTintColor()
 
-            presentViewController(alert, animated: true, completion:nil)
+            present(alert, animated: true, completion:nil)
         }
 
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 //    @IBAction func unwindToCureVC(sender: UIStoryboardSegue)

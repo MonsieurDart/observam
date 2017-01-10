@@ -26,14 +26,14 @@ var globalDrugAlreadyTaken = false
 
 struct Care {
 
-    var date: NSDate = NSDate()
+    var date: Date = Date()
     var title: String = "Sans effet."
 
     init(title: String)  {
         self.title = title
     }
 
-    init(title: String, date: NSDate)  {
+    init(title: String, date: Date)  {
         self.title = title
         self.date = date
     }
@@ -49,11 +49,11 @@ class CareHistory {
         return cares.count
     }
 
-    static func add(title: String) {
+    static func add(_ title: String) {
         cares.append(Care(title: title))
     }
 
-    static func add(title: String, atDate: NSDate) {
+    static func add(_ title: String, atDate: Date) {
         cares.append(Care(title: title, date: atDate))
     }
 
@@ -61,8 +61,8 @@ class CareHistory {
 
         return cares
             .groupBy { $0.date.dateAtStartOfDay() }
-            .sort { $0.0 > $1.0 }
-            .map { (date, cares) in cares.sort { $0.date > $1.date } }
+            .sorted { $0.0 > $1.0 }
+            .map { (date, cares) in cares.sorted { $0.date > $1.date } }
 
 //        return [[Care(title: "test"), Care(title: "test 2")]]
 
@@ -124,7 +124,7 @@ class CareHistory {
 
 extension Array {
 
-    func groupBy<G: Hashable>(groupClosure: (Element) -> G) -> [G: [Element]] {
+    func groupBy<G: Hashable>(_ groupClosure: (Element) -> G) -> [G: [Element]] {
         var dictionary = [G: [Element]]()
 
         for element in self {

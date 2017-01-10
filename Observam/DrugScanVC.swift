@@ -28,7 +28,7 @@ class DrugScanVC: UITableViewController, AVCaptureMetadataOutputObjectsDelegate 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
 
-        device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
 
         do {
             let input = try AVCaptureDeviceInput(device: device)
@@ -40,7 +40,7 @@ class DrugScanVC: UITableViewController, AVCaptureMetadataOutputObjectsDelegate 
         }
 
         let output = AVCaptureMetadataOutput()
-        output.setMetadataObjectsDelegate(self, queue:dispatch_get_main_queue())
+        output.setMetadataObjectsDelegate(self, queue:DispatchQueue.main)
         session.addOutput(output)
 
         output.metadataObjectTypes = output.availableMetadataObjectTypes
@@ -53,7 +53,7 @@ class DrugScanVC: UITableViewController, AVCaptureMetadataOutputObjectsDelegate 
 
 
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         session.startRunning()
     }
@@ -67,7 +67,7 @@ class DrugScanVC: UITableViewController, AVCaptureMetadataOutputObjectsDelegate 
 
     
 
-    func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
         
         NSLog("Found something!")
 
@@ -100,7 +100,7 @@ class DrugScanVC: UITableViewController, AVCaptureMetadataOutputObjectsDelegate 
                             self.title != "Votre médicament" { // Dirty dirty hack!!!
 
                             session.stopRunning()
-                            performSegueWithIdentifier("showNextScene", sender: self)
+                            performSegue(withIdentifier: "showNextScene", sender: self)
                             return
                         }
                     }
@@ -141,7 +141,7 @@ class DrugScanVC: UITableViewController, AVCaptureMetadataOutputObjectsDelegate 
 
 
 
-    override func tableView(tableView: UITableView,
+    override func tableView(_ tableView: UITableView,
                             willDisplayHeaderView view: UIView,
                                                   forSection section: Int) {
         let header = view as? UITableViewHeaderFooterView

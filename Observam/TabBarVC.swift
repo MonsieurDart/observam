@@ -21,16 +21,16 @@ class TabBarVC: UITabBarController {
 
     func createCareHistory() {
         let shift = 16.0
-        CareHistory.add("Tout va bien", atDate: NSDate(timeIntervalSinceNow:-60*60*(-8+shift)+2))
-        CareHistory.add("Prise du traitement", atDate: NSDate(timeIntervalSinceNow:-60*60*(-8+shift)))
-        CareHistory.add("Problèmes digestifs (1/5)",        atDate: NSDate(timeIntervalSinceNow:-60*60*(6.30+shift)))
-        CareHistory.add("Prise du traitement", atDate: NSDate(timeIntervalSinceNow:-60*60*(6.34+shift)))
-        CareHistory.add("Tout va bien",        atDate: NSDate(timeIntervalSinceNow:-60*60*(16.23+shift)))
-        CareHistory.add("Prise du traitement", atDate: NSDate(timeIntervalSinceNow:-60*60*(16.24+shift)))
-        CareHistory.add("Oubli du traitement", atDate: NSDate(timeIntervalSinceNow:-60*60*(36.6+shift)))
-        CareHistory.add("Assez fatigué (4/5)", atDate: NSDate(timeIntervalSinceNow:-60*60*(44.30+shift)))
-        CareHistory.add("Prise du traitement", atDate: NSDate(timeIntervalSinceNow:-60*60*(44.2+shift)))
-        CareHistory.add("Tout va bien",        atDate: NSDate(timeIntervalSinceNow:-60*60*(48.34+shift)))
+        CareHistory.add("Tout va bien", atDate: Date(timeIntervalSinceNow:-60*60*(-8+shift)+2))
+        CareHistory.add("Prise du traitement", atDate: Date(timeIntervalSinceNow:-60*60*(-8+shift)))
+        CareHistory.add("Problèmes digestifs (1/5)",        atDate: Date(timeIntervalSinceNow:-60*60*(6.30+shift)))
+        CareHistory.add("Prise du traitement", atDate: Date(timeIntervalSinceNow:-60*60*(6.34+shift)))
+        CareHistory.add("Tout va bien",        atDate: Date(timeIntervalSinceNow:-60*60*(16.23+shift)))
+        CareHistory.add("Prise du traitement", atDate: Date(timeIntervalSinceNow:-60*60*(16.24+shift)))
+        CareHistory.add("Oubli du traitement", atDate: Date(timeIntervalSinceNow:-60*60*(36.6+shift)))
+        CareHistory.add("Assez fatigué (4/5)", atDate: Date(timeIntervalSinceNow:-60*60*(44.30+shift)))
+        CareHistory.add("Prise du traitement", atDate: Date(timeIntervalSinceNow:-60*60*(44.2+shift)))
+        CareHistory.add("Tout va bien",        atDate: Date(timeIntervalSinceNow:-60*60*(48.34+shift)))
     }
 
 
@@ -40,11 +40,11 @@ class TabBarVC: UITabBarController {
     }
 
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         if (!globalIsWizardCompleted) {
-            performSegueWithIdentifier("showWizard", sender: self)
+            performSegue(withIdentifier: "showWizard", sender: self)
         }
     }
 //    override func viewWillAppear(animated: Bool) {

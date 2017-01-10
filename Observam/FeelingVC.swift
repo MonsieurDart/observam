@@ -22,7 +22,7 @@ class FeelingVC: UIViewController, UITextViewDelegate {
 
 
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         textView.becomeFirstResponder()
     }
@@ -36,11 +36,11 @@ class FeelingVC: UIViewController, UITextViewDelegate {
 
 
 
-    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
 
         if (text == "\n") {
-            CareHistory.add("Un peu fatigué (3/5)", atDate: NSDate())
-            self.navigationController?.popToRootViewControllerAnimated(true)
+            CareHistory.add("Un peu fatigué (3/5)", atDate: Date())
+            self.navigationController?.popToRootViewController(animated: true)
             return false
         }
         return true

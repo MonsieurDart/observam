@@ -27,7 +27,7 @@ class ProfilVC: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func tableView(tableView: UITableView,
+    override func tableView(_ tableView: UITableView,
                             willDisplayHeaderView view: UIView,
                                                   forSection section: Int) {
         let header = view as? UITableViewHeaderFooterView

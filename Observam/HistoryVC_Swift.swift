@@ -18,20 +18,20 @@ class HistoryVC_Swift: UITableViewController {
 
     // TODO: move those guys to a proper lazy global scope function.
 
-    func relativeDateFormatter() -> NSDateFormatter {
-        let relativeDateFormatter = NSDateFormatter();
-        relativeDateFormatter.locale = NSLocale.currentLocale();
-        relativeDateFormatter.timeStyle = NSDateFormatterStyle.NoStyle;
-        relativeDateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle;
+    func relativeDateFormatter() -> DateFormatter {
+        let relativeDateFormatter = DateFormatter();
+        relativeDateFormatter.locale = Locale.current;
+        relativeDateFormatter.timeStyle = DateFormatter.Style.none;
+        relativeDateFormatter.dateStyle = DateFormatter.Style.medium;
         relativeDateFormatter.doesRelativeDateFormatting = true;
         return relativeDateFormatter;
     }
 
-    func timeFormatter() -> NSDateFormatter {
-        let timeFormatter = NSDateFormatter();
-        timeFormatter.locale = NSLocale.currentLocale();
-        timeFormatter.timeStyle = NSDateFormatterStyle.ShortStyle;
-        timeFormatter.dateStyle = NSDateFormatterStyle.NoStyle;
+    func timeFormatter() -> DateFormatter {
+        let timeFormatter = DateFormatter();
+        timeFormatter.locale = Locale.current;
+        timeFormatter.timeStyle = DateFormatter.Style.short;
+        timeFormatter.dateStyle = DateFormatter.Style.none;
         return timeFormatter;
     }
 
@@ -51,7 +51,7 @@ class HistoryVC_Swift: UITableViewController {
 
 
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
@@ -69,22 +69,22 @@ class HistoryVC_Swift: UITableViewController {
 
 
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return CareHistory.caresGroupedByDay().count
     }
 
 
     
-    override func tableView(tableView: UITableView,
+    override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
         return CareHistory.caresGroupedByDay()[section].count
     }
 
 
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCellWithIdentifier("historyCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath)
 
         let groupedCares = CareHistory.caresGroupedByDay()
         if indexPath.section >= groupedCares.count ||
@@ -97,7 +97,7 @@ class HistoryVC_Swift: UITableViewController {
         let care = groupedCares[indexPath.section][indexPath.row]
 
 //        cell.detailTextLabel?.text = timeFormatter().stringFromDate(care.date)
-        cell.detailTextLabel?.text = care.date.toString(dateStyle: .NoStyle, timeStyle: .ShortStyle, doesRelativeDateFormatting: true)
+        cell.detailTextLabel?.text = care.date.toString(dateStyle: .none, timeStyle: .short, doesRelativeDateFormatting: true)
         cell.textLabel?.text = care.title
 
         return cell
@@ -105,16 +105,16 @@ class HistoryVC_Swift: UITableViewController {
 
 
 
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 
         let careGroup = CareHistory.caresGroupedByDay()[section]
 
-        return careGroup.first?.date.toString(dateStyle: .ShortStyle, timeStyle: .NoStyle, doesRelativeDateFormatting: true)
+        return careGroup.first?.date.toString(dateStyle: .short, timeStyle: .none, doesRelativeDateFormatting: true)
     }
 
 
 
-    override func tableView(tableView: UITableView,
+    override func tableView(_ tableView: UITableView,
                             willDisplayHeaderView view: UIView,
                                                   forSection section: Int) {
         let header = view as? UITableViewHeaderFooterView
@@ -135,27 +135,27 @@ class HistoryVC_Swift: UITableViewController {
 
 
 
-    @IBAction func share(sender: AnyObject) {
+    @IBAction func share(_ sender: AnyObject) {
 
         let alert = UIAlertController(title: "Partager votre historique",
                                       message: nil,
-                                      preferredStyle: .ActionSheet)
+                                      preferredStyle: .actionSheet)
 
         alert.addAction(UIAlertAction(
             title: "Envoyer à votre médecin…",
-            style: .Default, handler: { (action) in return }))
+            style: .default, handler: { (action) in return }))
 
         alert.addAction(UIAlertAction(
             title: "Envoyer à un proche…",
-            style: .Default, handler: { (action) in return }))
+            style: .default, handler: { (action) in return }))
 
         alert.addAction(UIAlertAction(
             title: "Annuler",
-            style: .Cancel, handler: { (action) in return }))
+            style: .cancel, handler: { (action) in return }))
 
         alert.view.tintColor = globalTintColor();
 
-        presentViewController(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
 
 
