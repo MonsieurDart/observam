@@ -17,16 +17,14 @@
 		4E3C40D21CD2C74A00CC54DF /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C40D11CD2C74A00CC54DF /* TabBarVC.swift */; };
 		4E3C40D41CD3F95C00CC54DF /* OtherCureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C40D31CD3F95C00CC54DF /* OtherCureVC.swift */; };
 		4E3C40D61CD4132A00CC54DF /* TipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C40D51CD4132A00CC54DF /* TipsVC.swift */; };
+		4E403B621E2940D70013B2E1 /* ObservamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E403B611E2940D70013B2E1 /* ObservamTests.swift */; };
 		4E8D8FA31CD88BD300FF8799 /* TakeDrugVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D8FA21CD88BD300FF8799 /* TakeDrugVC.swift */; };
 		4E8D8FA51CDFE5EE00FF8799 /* FeelingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D8FA41CDFE5EE00FF8799 /* FeelingVC.swift */; };
 		4E8D8FA71CDFEA2200FF8799 /* TodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D8FA61CDFEA2200FF8799 /* TodayVC.swift */; };
 		4E8D8FA91CE13CD600FF8799 /* WhatFeelingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D8FA81CE13CD600FF8799 /* WhatFeelingVC.swift */; };
 		4EC1E40A1CC79681004586B0 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4091CC79681004586B0 /* HistoryVC.m */; };
 		4EC1E40E1CC93388004586B0 /* CareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E40D1CC93388004586B0 /* CareModel.swift */; };
-		4EC1E40F1CC93388004586B0 /* CareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E40D1CC93388004586B0 /* CareModel.swift */; };
-		4EC1E4111CC9350C004586B0 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4101CC9350C004586B0 /* ModelTests.swift */; };
 		4EC1E4141CCE0548004586B0 /* HistoryVC_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4131CCE0548004586B0 /* HistoryVC_Swift.swift */; };
-		4EC1E4151CCE0548004586B0 /* HistoryVC_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4131CCE0548004586B0 /* HistoryVC_Swift.swift */; };
 		4EC1E43B1CD01BB7004586B0 /* ProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E43A1CD01BB7004586B0 /* ProfilVC.swift */; };
 		4EC1E43D1CD1223B004586B0 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E43C1CD1223B004586B0 /* SplashVC.swift */; };
 		4EC1E43F1CD1F25A004586B0 /* YouAndDoctorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E43E1CD1F25A004586B0 /* YouAndDoctorVC.swift */; };
@@ -42,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4E403B641E2940D70013B2E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC6906E1CBC35F10031C764 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC690751CBC35F10031C764;
+			remoteInfo = Observam;
+		};
 		4EC690931CBC35F20031C764 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4EC6906E1CBC35F10031C764 /* Project object */;
@@ -88,6 +93,9 @@
 		4E3C40D31CD3F95C00CC54DF /* OtherCureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCureVC.swift; sourceTree = "<group>"; };
 		4E3C40D51CD4132A00CC54DF /* TipsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsVC.swift; sourceTree = "<group>"; };
 		4E403B5A1E27DFA40013B2E1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E403B5F1E2940D70013B2E1 /* ObservamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E403B611E2940D70013B2E1 /* ObservamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservamTests.swift; sourceTree = "<group>"; };
+		4E403B631E2940D70013B2E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E8D8FA21CD88BD300FF8799 /* TakeDrugVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeDrugVC.swift; sourceTree = "<group>"; };
 		4E8D8FA41CDFE5EE00FF8799 /* FeelingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingVC.swift; sourceTree = "<group>"; };
 		4E8D8FA61CDFEA2200FF8799 /* TodayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayVC.swift; sourceTree = "<group>"; };
@@ -122,6 +130,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E403B5C1E2940D70013B2E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4EC690731CBC35F10031C764 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,12 +172,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4E403B601E2940D70013B2E1 /* ObservamTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E403B611E2940D70013B2E1 /* ObservamTests.swift */,
+				4E403B631E2940D70013B2E1 /* Info.plist */,
+			);
+			path = ObservamTests;
+			sourceTree = "<group>";
+		};
 		4EC6906D1CBC35F10031C764 = {
 			isa = PBXGroup;
 			children = (
 				4EC690781CBC35F20031C764 /* Observam */,
 				4EC690951CBC35F20031C764 /* ObservamTests */,
 				4EC690A01CBC35F20031C764 /* ObservamUITests */,
+				4E403B601E2940D70013B2E1 /* ObservamTests */,
 				4EC690771CBC35F10031C764 /* Products */,
 				8DE0AA808D0CF67FE0792805 /* Frameworks */,
 				477C9CE0275E7B945C736EBB /* Pods */,
@@ -175,6 +200,7 @@
 				4EC690761CBC35F10031C764 /* Observam.app */,
 				4EC690921CBC35F20031C764 /* Observam.xctest */,
 				4EC6909D1CBC35F20031C764 /* Observam.xctest */,
+				4E403B5F1E2940D70013B2E1 /* ObservamTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,6 +285,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4E403B5E1E2940D70013B2E1 /* ObservamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E403B661E2940D70013B2E1 /* Build configuration list for PBXNativeTarget "ObservamTests" */;
+			buildPhases = (
+				4E403B5B1E2940D70013B2E1 /* Sources */,
+				4E403B5C1E2940D70013B2E1 /* Frameworks */,
+				4E403B5D1E2940D70013B2E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E403B651E2940D70013B2E1 /* PBXTargetDependency */,
+			);
+			name = ObservamTests;
+			productName = ObservamTests;
+			productReference = 4E403B5F1E2940D70013B2E1 /* ObservamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4EC690751CBC35F10031C764 /* Observam */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EC690A61CBC35F20031C764 /* Build configuration list for PBXNativeTarget "Observam" */;
@@ -280,9 +324,9 @@
 			productReference = 4EC690761CBC35F10031C764 /* Observam.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EC690911CBC35F20031C764 /* ObservamTests */ = {
+		4EC690911CBC35F20031C764 /* ObservamTests_old */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EC690A91CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamTests" */;
+			buildConfigurationList = 4EC690A91CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamTests_old" */;
 			buildPhases = (
 				4EC6908E1CBC35F20031C764 /* Sources */,
 				4EC6908F1CBC35F20031C764 /* Frameworks */,
@@ -293,7 +337,7 @@
 			dependencies = (
 				4EC690941CBC35F20031C764 /* PBXTargetDependency */,
 			);
-			name = ObservamTests;
+			name = ObservamTests_old;
 			productName = "Observ'amTests";
 			productReference = 4EC690921CBC35F20031C764 /* Observam.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -322,10 +366,15 @@
 		4EC6906E1CBC35F10031C764 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Godart;
 				TargetAttributes = {
+					4E403B5E1E2940D70013B2E1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4EC690751CBC35F10031C764;
+					};
 					4EC690751CBC35F10031C764 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 6TKSKZ8KG5;
@@ -362,13 +411,21 @@
 			projectRoot = "";
 			targets = (
 				4EC690751CBC35F10031C764 /* Observam */,
-				4EC690911CBC35F20031C764 /* ObservamTests */,
+				4EC690911CBC35F20031C764 /* ObservamTests_old */,
 				4EC6909C1CBC35F20031C764 /* ObservamUITests */,
+				4E403B5E1E2940D70013B2E1 /* ObservamTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4E403B5D1E2940D70013B2E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4EC690741CBC35F10031C764 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,6 +501,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E403B5B1E2940D70013B2E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E403B621E2940D70013B2E1 /* ObservamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4EC690721CBC35F10031C764 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -479,9 +544,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC1E4111CC9350C004586B0 /* ModelTests.swift in Sources */,
-				4EC1E40F1CC93388004586B0 /* CareModel.swift in Sources */,
-				4EC1E4151CCE0548004586B0 /* HistoryVC_Swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +558,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4E403B651E2940D70013B2E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC690751CBC35F10031C764 /* Observam */;
+			targetProxy = 4E403B641E2940D70013B2E1 /* PBXContainerItemProxy */;
+		};
 		4EC690941CBC35F20031C764 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4EC690751CBC35F10031C764 /* Observam */;
@@ -528,6 +595,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4E403B671E2940D70013B2E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = ObservamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.godart.ObservamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observam.app/Observam";
+			};
+			name = Debug;
+		};
+		4E403B681E2940D70013B2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = ObservamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.godart.ObservamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observam.app/Observam";
+			};
+			name = Release;
+		};
 		4EC690A41CBC35F20031C764 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -708,6 +807,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E403B661E2940D70013B2E1 /* Build configuration list for PBXNativeTarget "ObservamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E403B671E2940D70013B2E1 /* Debug */,
+				4E403B681E2940D70013B2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4EC690711CBC35F10031C764 /* Build configuration list for PBXProject "Observam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -726,7 +833,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EC690A91CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamTests" */ = {
+		4EC690A91CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamTests_old" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EC690AA1CBC35F20031C764 /* Debug */,
