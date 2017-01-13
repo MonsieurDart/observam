@@ -43,9 +43,9 @@ class TabBarVC: UITabBarController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        if (!globalIsWizardCompleted) {
-            performSegue(withIdentifier: "showWizard", sender: self)
-        }
+//        if (!globalIsWizardCompleted) {
+//            performSegue(withIdentifier: "showWizard", sender: self)
+//        }
     }
 //    override func viewWillAppear(animated: Bool) {
 //        super.viewWillAppear(animated)

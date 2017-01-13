@@ -1,0 +1,6 @@
+framework module Pods_Observam {
+  umbrella header "Pods-Observam-umbrella.h"
+
+  export *
+  module * { export * }
+}

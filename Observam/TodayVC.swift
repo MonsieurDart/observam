@@ -25,7 +25,7 @@ class TodayVC: UITableViewController {
 
         self.tableView.estimatedRowHeight = 44
 
-        self.tipOfTheDay.text = "Lavez-vous les mains avant et après chaque fois que vous avez touché les comprimés."
+        self.tipOfTheDay.text = "Lavez-vous les mains avant et après, à chaque fois que vous touchez vos comprimés."
 
         self.tableView.backgroundView = self.backgroundView
     }

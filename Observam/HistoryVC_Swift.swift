@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFDateHelper
 
 class HistoryVC_Swift: UITableViewController {
 
@@ -18,22 +19,22 @@ class HistoryVC_Swift: UITableViewController {
 
     // TODO: move those guys to a proper lazy global scope function.
 
-    func relativeDateFormatter() -> DateFormatter {
-        let relativeDateFormatter = DateFormatter();
-        relativeDateFormatter.locale = Locale.current;
-        relativeDateFormatter.timeStyle = DateFormatter.Style.none;
-        relativeDateFormatter.dateStyle = DateFormatter.Style.medium;
-        relativeDateFormatter.doesRelativeDateFormatting = true;
-        return relativeDateFormatter;
-    }
-
-    func timeFormatter() -> DateFormatter {
-        let timeFormatter = DateFormatter();
-        timeFormatter.locale = Locale.current;
-        timeFormatter.timeStyle = DateFormatter.Style.short;
-        timeFormatter.dateStyle = DateFormatter.Style.none;
-        return timeFormatter;
-    }
+//    func relativeDateFormatter() -> DateFormatter {
+//        let relativeDateFormatter = DateFormatter();
+//        relativeDateFormatter.locale = Locale.current;
+//        relativeDateFormatter.timeStyle = DateFormatter.Style.none;
+//        relativeDateFormatter.dateStyle = DateFormatter.Style.medium;
+//        relativeDateFormatter.doesRelativeDateFormatting = true;
+//        return relativeDateFormatter;
+//    }
+//
+//    func timeFormatter() -> DateFormatter {
+//        let timeFormatter = DateFormatter();
+//        timeFormatter.locale = Locale.current;
+//        timeFormatter.timeStyle = DateFormatter.Style.short;
+//        timeFormatter.dateStyle = DateFormatter.Style.none;
+//        return timeFormatter;
+//    }
 
 
 
@@ -87,6 +88,8 @@ class HistoryVC_Swift: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath)
 
         let groupedCares = CareHistory.caresGroupedByDay()
+
+        // TODO: do something a bit more modern…
         if indexPath.section >= groupedCares.count ||
             indexPath.row >= groupedCares[indexPath.section].count {
             cell.detailTextLabel?.text = ""
@@ -96,8 +99,8 @@ class HistoryVC_Swift: UITableViewController {
 
         let care = groupedCares[indexPath.section][indexPath.row]
 
-        cell.detailTextLabel?.text = timeFormatter().string(from: care.date)
-//        cell.detailTextLabel?.text = care.date.toString(dateStyle: .none, timeStyle: .short, doesRelativeDateFormatting: true)
+//        cell.detailTextLabel?.text = timeFormatter().string(from: care.date)
+        cell.detailTextLabel?.text = care.date.toString(.none, timeStyle: .short, doesRelativeDateFormatting: true)
         cell.textLabel?.text = care.title
 
         return cell
@@ -109,10 +112,14 @@ class HistoryVC_Swift: UITableViewController {
 
         let careGroup = CareHistory.caresGroupedByDay()[section]
 
-        return "Une date à déterminer…"
+        let groupDate = careGroup.first?.date
+
+        return groupDate?.toString(.short, timeStyle: .none, doesRelativeDateFormatting: true)
+//        return careGroup.first?.date.string(dateStyle: .short, timeStyle: .none)
+//        return "Une date à déterminer…"
+
 //        return relativeDateFormatter().string(from: careGroup.first?.date?)
 
-//        return careGroup.first?.date.toString(dateStyle: .short, timeStyle: .none, doesRelativeDateFormatting: true)
     }
 
 

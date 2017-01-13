@@ -38,6 +38,7 @@
 		4EC690891CBC35F20031C764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC690881CBC35F20031C764 /* Assets.xcassets */; };
 		4EC6908C1CBC35F20031C764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC6908A1CBC35F20031C764 /* LaunchScreen.storyboard */; };
 		4EC690A21CBC35F20031C764 /* ObservamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC690A11CBC35F20031C764 /* ObservamUITests.m */; };
+		C767867486B4102B1A11A552 /* Pods_Observam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47149F04DA55632651615644 /* Pods_Observam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		150AB75FC337C70E4B7BF47A /* Pods-Observam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Observam/Pods-Observam.release.xcconfig"; sourceTree = "<group>"; };
+		47149F04DA55632651615644 /* Pods_Observam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Observam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1A4C4C1CC2A7DD00D3E550 /* TakeDrugVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeDrugVC.h; sourceTree = "<group>"; };
 		4E1A4C4D1CC2A7DD00D3E550 /* TakeDrugVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeDrugVC.m; sourceTree = "<group>"; };
 		4E1A4C4F1CC4C89700D3E550 /* DrugLeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugLeftVC.h; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		4E3C40D11CD2C74A00CC54DF /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		4E3C40D31CD3F95C00CC54DF /* OtherCureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCureVC.swift; sourceTree = "<group>"; };
 		4E3C40D51CD4132A00CC54DF /* TipsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsVC.swift; sourceTree = "<group>"; };
+		4E403B5A1E27DFA40013B2E1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4E8D8FA21CD88BD300FF8799 /* TakeDrugVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeDrugVC.swift; sourceTree = "<group>"; };
 		4E8D8FA41CDFE5EE00FF8799 /* FeelingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingVC.swift; sourceTree = "<group>"; };
 		4E8D8FA61CDFEA2200FF8799 /* TodayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayVC.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		4EC6909D1CBC35F20031C764 /* Observam.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Observam.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC690A11CBC35F20031C764 /* ObservamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObservamUITests.m; sourceTree = "<group>"; };
 		4EC690A31CBC35F20031C764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E2C0854C9BEE8EFAF8C259 /* Pods-Observam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Observam/Pods-Observam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C767867486B4102B1A11A552 /* Pods_Observam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +147,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		477C9CE0275E7B945C736EBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E403B5A1E27DFA40013B2E1 /* Podfile */,
+				80E2C0854C9BEE8EFAF8C259 /* Pods-Observam.debug.xcconfig */,
+				150AB75FC337C70E4B7BF47A /* Pods-Observam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4EC6906D1CBC35F10031C764 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +165,7 @@
 				4EC690A01CBC35F20031C764 /* ObservamUITests */,
 				4EC690771CBC35F10031C764 /* Products */,
 				8DE0AA808D0CF67FE0792805 /* Frameworks */,
+				477C9CE0275E7B945C736EBB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,6 +251,7 @@
 		8DE0AA808D0CF67FE0792805 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47149F04DA55632651615644 /* Pods_Observam.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,10 +263,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EC690A61CBC35F20031C764 /* Build configuration list for PBXNativeTarget "Observam" */;
 			buildPhases = (
+				3B377F8E024906E10660628D /* [CP] Check Pods Manifest.lock */,
 				4EC690721CBC35F10031C764 /* Sources */,
 				4EC690731CBC35F10031C764 /* Frameworks */,
 				4EC690741CBC35F10031C764 /* Resources */,
 				4EC1E4351CCEE3A6004586B0 /* Embed Frameworks */,
+				71D813AE1CD8109FE7B27E22 /* [CP] Embed Pods Frameworks */,
+				16CEA5D6DAA107DA73CEC570 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,6 +394,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16CEA5D6DAA107DA73CEC570 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Observam/Pods-Observam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B377F8E024906E10660628D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71D813AE1CD8109FE7B27E22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Observam/Pods-Observam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EC690721CBC35F10031C764 /* Sources */ = {
@@ -548,8 +617,8 @@
 		};
 		4EC690A71CBC35F20031C764 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E2C0854C9BEE8EFAF8C259 /* Pods-Observam.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -561,14 +630,13 @@
 				PRODUCT_NAME = Observam;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4EC690A81CBC35F20031C764 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150AB75FC337C70E4B7BF47A /* Pods-Observam.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -579,7 +647,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.godart.Observam;
 				PRODUCT_NAME = Observam;
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

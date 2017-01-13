@@ -4,8 +4,8 @@ import UIKit
 
 var str = "Hello, playground"
 
-import DataModel
-
-CareHistory.cares
+//import CareHistory
+//
+//CareHistory.cares
 
 

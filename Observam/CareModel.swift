@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-//import SwiftDate
 //import AFDateHelper
 
 
@@ -61,8 +60,8 @@ class CareHistory {
     static func caresGroupedByDay() -> [[Care]] {
 
         return cares
-            .groupBy { $0.date }
-//            .groupBy { $0.date.dateAtStartOfDay() }
+//            .groupBy { $0.date }
+            .groupBy { $0.date.dateAtStartOfDay() }
             .sorted { $0.0 > $1.0 }
             .map { (date, cares) in cares.sorted { $0.date > $1.date } }
 
