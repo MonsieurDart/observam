@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E1A4C4E1CC2A7DD00D3E550 /* TakeDrugVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A4C4D1CC2A7DD00D3E550 /* TakeDrugVC.m */; };
-		4E1A4C511CC4C89700D3E550 /* DrugLeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A4C501CC4C89700D3E550 /* DrugLeftVC.m */; };
-		4E1A4C541CC584B300D3E550 /* WhatFeelingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A4C531CC584B300D3E550 /* WhatFeelingVC.m */; };
 		4E1EE2641CD29E8200611C5D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EE2631CD29E8200611C5D /* DetailViewController.swift */; };
 		4E1EE2661CD2A46A00611C5D /* CureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EE2651CD2A46A00611C5D /* CureVC.swift */; };
 		4E3C40CE1CD2C0AD00CC54DF /* DrugScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C40CD1CD2C0AD00CC54DF /* DrugScanVC.swift */; };
@@ -18,20 +15,18 @@
 		4E3C40D41CD3F95C00CC54DF /* OtherCureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C40D31CD3F95C00CC54DF /* OtherCureVC.swift */; };
 		4E3C40D61CD4132A00CC54DF /* TipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C40D51CD4132A00CC54DF /* TipsVC.swift */; };
 		4E403B621E2940D70013B2E1 /* ObservamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E403B611E2940D70013B2E1 /* ObservamTests.swift */; };
+		4E403B6A1E2976D60013B2E1 /* DrugLeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E403B691E2976D60013B2E1 /* DrugLeftVC.swift */; };
+		4E4970A41E2AB9F30099966E /* SymptomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4970A31E2AB9F30099966E /* SymptomsVC.swift */; };
+		4E597EF21E2A947A00608ED1 /* AppD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E597EF11E2A947A00608ED1 /* AppD.swift */; };
 		4E8D8FA31CD88BD300FF8799 /* TakeDrugVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D8FA21CD88BD300FF8799 /* TakeDrugVC.swift */; };
 		4E8D8FA51CDFE5EE00FF8799 /* FeelingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D8FA41CDFE5EE00FF8799 /* FeelingVC.swift */; };
 		4E8D8FA71CDFEA2200FF8799 /* TodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D8FA61CDFEA2200FF8799 /* TodayVC.swift */; };
 		4E8D8FA91CE13CD600FF8799 /* WhatFeelingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D8FA81CE13CD600FF8799 /* WhatFeelingVC.swift */; };
-		4EC1E40A1CC79681004586B0 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4091CC79681004586B0 /* HistoryVC.m */; };
 		4EC1E40E1CC93388004586B0 /* CareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E40D1CC93388004586B0 /* CareModel.swift */; };
 		4EC1E4141CCE0548004586B0 /* HistoryVC_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E4131CCE0548004586B0 /* HistoryVC_Swift.swift */; };
 		4EC1E43B1CD01BB7004586B0 /* ProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E43A1CD01BB7004586B0 /* ProfilVC.swift */; };
 		4EC1E43D1CD1223B004586B0 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E43C1CD1223B004586B0 /* SplashVC.swift */; };
 		4EC1E43F1CD1F25A004586B0 /* YouAndDoctorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1E43E1CD1F25A004586B0 /* YouAndDoctorVC.swift */; };
-		4EC6907B1CBC35F20031C764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6907A1CBC35F20031C764 /* main.m */; };
-		4EC6907E1CBC35F20031C764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6907D1CBC35F20031C764 /* AppDelegate.m */; };
-		4EC690811CBC35F20031C764 /* TodayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC690801CBC35F20031C764 /* TodayVC.m */; };
-		4EC690841CBC35F20031C764 /* SymptomsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC690831CBC35F20031C764 /* SymptomsVC.m */; };
 		4EC690871CBC35F20031C764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC690851CBC35F20031C764 /* Main.storyboard */; };
 		4EC690891CBC35F20031C764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC690881CBC35F20031C764 /* Assets.xcassets */; };
 		4EC6908C1CBC35F20031C764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC6908A1CBC35F20031C764 /* LaunchScreen.storyboard */; };
@@ -46,13 +41,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4EC690751CBC35F10031C764;
 			remoteInfo = Observam;
-		};
-		4EC690931CBC35F20031C764 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4EC6906E1CBC35F10031C764 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4EC690751CBC35F10031C764;
-			remoteInfo = "Observ'am";
 		};
 		4EC6909E1CBC35F20031C764 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -79,12 +67,6 @@
 /* Begin PBXFileReference section */
 		150AB75FC337C70E4B7BF47A /* Pods-Observam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Observam/Pods-Observam.release.xcconfig"; sourceTree = "<group>"; };
 		47149F04DA55632651615644 /* Pods_Observam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Observam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E1A4C4C1CC2A7DD00D3E550 /* TakeDrugVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeDrugVC.h; sourceTree = "<group>"; };
-		4E1A4C4D1CC2A7DD00D3E550 /* TakeDrugVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeDrugVC.m; sourceTree = "<group>"; };
-		4E1A4C4F1CC4C89700D3E550 /* DrugLeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugLeftVC.h; sourceTree = "<group>"; };
-		4E1A4C501CC4C89700D3E550 /* DrugLeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugLeftVC.m; sourceTree = "<group>"; };
-		4E1A4C521CC584B300D3E550 /* WhatFeelingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatFeelingVC.h; sourceTree = "<group>"; };
-		4E1A4C531CC584B300D3E550 /* WhatFeelingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatFeelingVC.m; sourceTree = "<group>"; };
 		4E1EE2631CD29E8200611C5D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4E1EE2651CD2A46A00611C5D /* CureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CureVC.swift; sourceTree = "<group>"; };
 		4E3C40CD1CD2C0AD00CC54DF /* DrugScanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugScanVC.swift; sourceTree = "<group>"; };
@@ -96,33 +78,24 @@
 		4E403B5F1E2940D70013B2E1 /* ObservamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E403B611E2940D70013B2E1 /* ObservamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservamTests.swift; sourceTree = "<group>"; };
 		4E403B631E2940D70013B2E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E403B691E2976D60013B2E1 /* DrugLeftVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugLeftVC.swift; sourceTree = "<group>"; };
+		4E4970A31E2AB9F30099966E /* SymptomsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsVC.swift; sourceTree = "<group>"; };
+		4E597EF11E2A947A00608ED1 /* AppD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppD.swift; sourceTree = "<group>"; };
 		4E8D8FA21CD88BD300FF8799 /* TakeDrugVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeDrugVC.swift; sourceTree = "<group>"; };
 		4E8D8FA41CDFE5EE00FF8799 /* FeelingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingVC.swift; sourceTree = "<group>"; };
 		4E8D8FA61CDFEA2200FF8799 /* TodayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayVC.swift; sourceTree = "<group>"; };
 		4E8D8FA81CE13CD600FF8799 /* WhatFeelingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatFeelingVC.swift; sourceTree = "<group>"; };
-		4EC1E4081CC79681004586B0 /* HistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryVC.h; sourceTree = "<group>"; };
-		4EC1E4091CC79681004586B0 /* HistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryVC.m; sourceTree = "<group>"; };
 		4EC1E40D1CC93388004586B0 /* CareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareModel.swift; sourceTree = "<group>"; };
-		4EC1E4101CC9350C004586B0 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		4EC1E4121CC936FD004586B0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		4EC1E4131CCE0548004586B0 /* HistoryVC_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC_Swift.swift; sourceTree = "<group>"; };
 		4EC1E43A1CD01BB7004586B0 /* ProfilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilVC.swift; sourceTree = "<group>"; };
 		4EC1E43C1CD1223B004586B0 /* SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		4EC1E43E1CD1F25A004586B0 /* YouAndDoctorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouAndDoctorVC.swift; sourceTree = "<group>"; };
 		4EC690761CBC35F10031C764 /* Observam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Observam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EC6907A1CBC35F20031C764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4EC6907C1CBC35F20031C764 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4EC6907D1CBC35F20031C764 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4EC6907F1CBC35F20031C764 /* TodayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayVC.h; sourceTree = "<group>"; };
-		4EC690801CBC35F20031C764 /* TodayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayVC.m; sourceTree = "<group>"; };
-		4EC690821CBC35F20031C764 /* SymptomsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymptomsVC.h; sourceTree = "<group>"; };
-		4EC690831CBC35F20031C764 /* SymptomsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymptomsVC.m; sourceTree = "<group>"; };
 		4EC690861CBC35F20031C764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EC690881CBC35F20031C764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EC6908B1CBC35F20031C764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EC6908D1CBC35F20031C764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EC690921CBC35F20031C764 /* Observam.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Observam.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EC690981CBC35F20031C764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EC6909D1CBC35F20031C764 /* Observam.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Observam.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC690A11CBC35F20031C764 /* ObservamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObservamUITests.m; sourceTree = "<group>"; };
 		4EC690A31CBC35F20031C764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,13 +115,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C767867486B4102B1A11A552 /* Pods_Observam.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4EC6908F1CBC35F20031C764 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				4EC690781CBC35F20031C764 /* Observam */,
-				4EC690951CBC35F20031C764 /* ObservamTests */,
 				4EC690A01CBC35F20031C764 /* ObservamUITests */,
 				4E403B601E2940D70013B2E1 /* ObservamTests */,
 				4EC690771CBC35F10031C764 /* Products */,
@@ -198,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				4EC690761CBC35F10031C764 /* Observam.app */,
-				4EC690921CBC35F20031C764 /* Observam.xctest */,
 				4EC6909D1CBC35F20031C764 /* Observam.xctest */,
 				4E403B5F1E2940D70013B2E1 /* ObservamTests.xctest */,
 			);
@@ -209,8 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				4EC1E4121CC936FD004586B0 /* MyPlayground.playground */,
-				4EC6907C1CBC35F20031C764 /* AppDelegate.h */,
-				4EC6907D1CBC35F20031C764 /* AppDelegate.m */,
+				4E597EF11E2A947A00608ED1 /* AppD.swift */,
 				4EC1E40D1CC93388004586B0 /* CareModel.swift */,
 				4EC690851CBC35F20031C764 /* Main.storyboard */,
 				4EC690881CBC35F20031C764 /* Assets.xcassets */,
@@ -221,22 +184,12 @@
 				4E1EE2651CD2A46A00611C5D /* CureVC.swift */,
 				4E3C40D31CD3F95C00CC54DF /* OtherCureVC.swift */,
 				4E3C40CF1CD2C1C100CC54DF /* OrdoScanVC.swift */,
-				4EC6907F1CBC35F20031C764 /* TodayVC.h */,
-				4EC690801CBC35F20031C764 /* TodayVC.m */,
 				4E8D8FA61CDFEA2200FF8799 /* TodayVC.swift */,
-				4E1A4C4C1CC2A7DD00D3E550 /* TakeDrugVC.h */,
-				4E1A4C4D1CC2A7DD00D3E550 /* TakeDrugVC.m */,
 				4E8D8FA21CD88BD300FF8799 /* TakeDrugVC.swift */,
-				4E1A4C4F1CC4C89700D3E550 /* DrugLeftVC.h */,
-				4E1A4C501CC4C89700D3E550 /* DrugLeftVC.m */,
-				4E1A4C521CC584B300D3E550 /* WhatFeelingVC.h */,
-				4E1A4C531CC584B300D3E550 /* WhatFeelingVC.m */,
+				4E403B691E2976D60013B2E1 /* DrugLeftVC.swift */,
+				4E4970A31E2AB9F30099966E /* SymptomsVC.swift */,
 				4E8D8FA81CE13CD600FF8799 /* WhatFeelingVC.swift */,
-				4EC690821CBC35F20031C764 /* SymptomsVC.h */,
-				4EC690831CBC35F20031C764 /* SymptomsVC.m */,
 				4E8D8FA41CDFE5EE00FF8799 /* FeelingVC.swift */,
-				4EC1E4081CC79681004586B0 /* HistoryVC.h */,
-				4EC1E4091CC79681004586B0 /* HistoryVC.m */,
 				4EC1E4131CCE0548004586B0 /* HistoryVC_Swift.swift */,
 				4E3C40D51CD4132A00CC54DF /* TipsVC.swift */,
 				4EC1E43A1CD01BB7004586B0 /* ProfilVC.swift */,
@@ -251,18 +204,8 @@
 			children = (
 				4EC6908D1CBC35F20031C764 /* Info.plist */,
 				4EC6908A1CBC35F20031C764 /* LaunchScreen.storyboard */,
-				4EC6907A1CBC35F20031C764 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4EC690951CBC35F20031C764 /* ObservamTests */ = {
-			isa = PBXGroup;
-			children = (
-				4EC1E4101CC9350C004586B0 /* ModelTests.swift */,
-				4EC690981CBC35F20031C764 /* Info.plist */,
-			);
-			path = ObservamTests;
 			sourceTree = "<group>";
 		};
 		4EC690A01CBC35F20031C764 /* ObservamUITests */ = {
@@ -324,24 +267,6 @@
 			productReference = 4EC690761CBC35F10031C764 /* Observam.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EC690911CBC35F20031C764 /* ObservamTests_old */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4EC690A91CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamTests_old" */;
-			buildPhases = (
-				4EC6908E1CBC35F20031C764 /* Sources */,
-				4EC6908F1CBC35F20031C764 /* Frameworks */,
-				4EC690901CBC35F20031C764 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4EC690941CBC35F20031C764 /* PBXTargetDependency */,
-			);
-			name = ObservamTests_old;
-			productName = "Observ'amTests";
-			productReference = 4EC690921CBC35F20031C764 /* Observam.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		4EC6909C1CBC35F20031C764 /* ObservamUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EC690AC1CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamUITests" */;
@@ -385,11 +310,6 @@
 							};
 						};
 					};
-					4EC690911CBC35F20031C764 = {
-						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0820;
-						TestTargetID = 4EC690751CBC35F10031C764;
-					};
 					4EC6909C1CBC35F20031C764 = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0820;
@@ -411,7 +331,6 @@
 			projectRoot = "";
 			targets = (
 				4EC690751CBC35F10031C764 /* Observam */,
-				4EC690911CBC35F20031C764 /* ObservamTests_old */,
 				4EC6909C1CBC35F20031C764 /* ObservamUITests */,
 				4E403B5E1E2940D70013B2E1 /* ObservamTests */,
 			);
@@ -433,13 +352,6 @@
 				4EC6908C1CBC35F20031C764 /* LaunchScreen.storyboard in Resources */,
 				4EC690891CBC35F20031C764 /* Assets.xcassets in Resources */,
 				4EC690871CBC35F20031C764 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4EC690901CBC35F20031C764 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,37 +425,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E1A4C4E1CC2A7DD00D3E550 /* TakeDrugVC.m in Sources */,
-				4EC1E40A1CC79681004586B0 /* HistoryVC.m in Sources */,
 				4EC1E43F1CD1F25A004586B0 /* YouAndDoctorVC.swift in Sources */,
 				4E8D8FA71CDFEA2200FF8799 /* TodayVC.swift in Sources */,
+				4E597EF21E2A947A00608ED1 /* AppD.swift in Sources */,
 				4EC1E40E1CC93388004586B0 /* CareModel.swift in Sources */,
 				4E3C40D21CD2C74A00CC54DF /* TabBarVC.swift in Sources */,
 				4E3C40D41CD3F95C00CC54DF /* OtherCureVC.swift in Sources */,
-				4E1A4C541CC584B300D3E550 /* WhatFeelingVC.m in Sources */,
-				4EC690841CBC35F20031C764 /* SymptomsVC.m in Sources */,
 				4EC1E43D1CD1223B004586B0 /* SplashVC.swift in Sources */,
 				4EC1E4141CCE0548004586B0 /* HistoryVC_Swift.swift in Sources */,
 				4EC1E43B1CD01BB7004586B0 /* ProfilVC.swift in Sources */,
-				4EC6907E1CBC35F20031C764 /* AppDelegate.m in Sources */,
 				4E3C40D61CD4132A00CC54DF /* TipsVC.swift in Sources */,
 				4E3C40D01CD2C1C100CC54DF /* OrdoScanVC.swift in Sources */,
-				4E1A4C511CC4C89700D3E550 /* DrugLeftVC.m in Sources */,
 				4E3C40CE1CD2C0AD00CC54DF /* DrugScanVC.swift in Sources */,
 				4E1EE2661CD2A46A00611C5D /* CureVC.swift in Sources */,
-				4EC690811CBC35F20031C764 /* TodayVC.m in Sources */,
-				4EC6907B1CBC35F20031C764 /* main.m in Sources */,
+				4E4970A41E2AB9F30099966E /* SymptomsVC.swift in Sources */,
 				4E8D8FA31CD88BD300FF8799 /* TakeDrugVC.swift in Sources */,
 				4E8D8FA91CE13CD600FF8799 /* WhatFeelingVC.swift in Sources */,
+				4E403B6A1E2976D60013B2E1 /* DrugLeftVC.swift in Sources */,
 				4E1EE2641CD29E8200611C5D /* DetailViewController.swift in Sources */,
 				4E8D8FA51CDFE5EE00FF8799 /* FeelingVC.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4EC6908E1CBC35F20031C764 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,11 +462,6 @@
 			isa = PBXTargetDependency;
 			target = 4EC690751CBC35F10031C764 /* Observam */;
 			targetProxy = 4E403B641E2940D70013B2E1 /* PBXContainerItemProxy */;
-		};
-		4EC690941CBC35F20031C764 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4EC690751CBC35F10031C764 /* Observam */;
-			targetProxy = 4EC690931CBC35F20031C764 /* PBXContainerItemProxy */;
 		};
 		4EC6909F1CBC35F20031C764 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -749,37 +644,6 @@
 			};
 			name = Release;
 		};
-		4EC690AA1CBC35F20031C764 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ObservamTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amTests";
-				PRODUCT_NAME = Observam;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observam.app/Observam";
-			};
-			name = Debug;
-		};
-		4EC690AB1CBC35F20031C764 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ObservamTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "co.godart.Observ-amTests";
-				PRODUCT_NAME = Observam;
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observam.app/Observam";
-			};
-			name = Release;
-		};
 		4EC690AD1CBC35F20031C764 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -814,6 +678,7 @@
 				4E403B681E2940D70013B2E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EC690711CBC35F10031C764 /* Build configuration list for PBXProject "Observam" */ = {
 			isa = XCConfigurationList;
@@ -829,15 +694,6 @@
 			buildConfigurations = (
 				4EC690A71CBC35F20031C764 /* Debug */,
 				4EC690A81CBC35F20031C764 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4EC690A91CBC35F20031C764 /* Build configuration list for PBXNativeTarget "ObservamTests_old" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4EC690AA1CBC35F20031C764 /* Debug */,
-				4EC690AB1CBC35F20031C764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
